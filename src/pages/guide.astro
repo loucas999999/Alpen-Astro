@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpen - Working Guide</title>
+    <link rel="stylesheet" href="/Working Guide/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS RESETS */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+
+      @font-face {
+        font-family: Dafoe;
+        src: url(/Mr_Dafoe/MrDafoe-Regular.ttf);
+      }
+
+      /* HEADER SECTION */
+      img {
+        height: 3rem;
+        width: auto;
+      }
+
+      .header__main-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+        height: 8vh;
+        background: #daa520;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .header__heading-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .h1 a {
+        transition: 0.5s ease;
+      }
+
+      .h1 a:hover {
+        filter: drop-shadow(white 0px 0px 10px);
+        color: white;
+        text-align: center;
+      }
+
+      /*=================== MAIN SECTION ================*/
+
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        height: 600vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      .note__under-heading {
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        padding-bottom: 0.3rem;
+      }
+
+      h4 {
+        color: #daa520;
+        font-size: 1.2rem;
+      }
+
+      .line__under-heading {
+        border: 1px solid rgba(0, 0, 0, 0.251);
+        margin: 3rem 0;
+      }
+
+      p {
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+        color: #333333;
+      }
+
+      .terms {
+        padding-bottom: 2rem;
+      }
+
+      .main__div-section {
+        max-width: 100ch;
+      }
+
+      strong {
+        color: black;
+      }
+
+      mark {
+        background-color: #fffe80;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header__main-div">
+      <div class="header__heading-div">
+        <h1 class="h1">
+          <a href="/Home/index.html"
+            ><img
+              class="header__alpen-logo"
+              src="/Images/Logooooo.png"
+              alt="Transparent Alpen logo image"
+            /></a
+          >
+        </h1>
+      </div>
+    </div>
+
+    <section class="main-section">
+      <div class="main__div-section">
+        <h1>Guide & Info</h1>
+        <p class="note__under-heading">Everything you need to know.</p>
+        <hr class="line__under-heading" />
+
+        <div class="terms">
+          <h3>Why we started</h3>
+          <p>
+            Welcome to Alpen Inc. , a premier web development agency. We have
+            observed that many successful businesses in Cyprus lack a
+            high-quality online presence, limiting their growth and visibility
+            in today's digital age. <br />
+            Our goal is to bridge this gap by providing these businesses with professionally
+            designed websites and comprehensive digital marketing strategies. By
+            doing so, we aim to help them reach new markets, establish stronger brand
+            identities, and compete more effectively in their respective industries.
+            <br />
+            With our assistance, Cyprus' businesses can leverage the power of the
+            internet to expand their customer base, streamline their operations,
+            and achieve sustainable success.
+          </p><div id="services__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Our Services - What we offer to our Clients</h3>
+          <p>
+            Our agency offers a comprehensive suite of 3 services to choose
+            from, including hand coded custom websites, professional
+            photography, and search engine optimization boost (SEO). <br />
+            <br />
+            We design and develop hand coded visually stunning websites that not
+            only capture the essence of your brand but also provide an intuitive
+            user experience. <br />
+            <br />
+            Our photography services add compelling visuals to your online presence,
+            ensuring that your website and marketing materials stand out. <br />
+            <br />
+            Lastly, our SEO strategies boost your website's visibility, driving organic
+            traffic and enhancing your online reach. A simpler way to understand
+            SEO is to imagine someone searching for 'Best Restaurants in Cyprus.'
+            With effective SEO strategies, a restaurant's website can appear at the
+            top of the search results. This ensures it’s among the first choices
+            people see, helping the restaurant attract more customers. Together,
+            these services create a powerful online presence that fosters growth
+            and success for your business.
+          </p><div id="go__to-duration"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Project Details</h3>
+          <h4>Website</h4>
+          <p>
+            We start by having a call where we discuss how you want your website
+            to look. We'll explore the design, including color schemes, layout,
+            and any specific features or functionalities you envision. This way,
+            we ensure that the final product reflects your brand's identity and
+            meets your goals effectively. <br />
+            <br />
+            Secondly, we work diligently to complete every project within 2 weeks,
+            striking a balance between efficiency and thoroughness. This timeline
+            allows us to refine each detail, from design to functionality, ensuring
+            a polished website that satisfies your needs and provides an exceptional
+            user experience."
+            <br />
+            <br />
+            Lastly, the pricing of each project depends on its difficulty and complexity.
+            This includes factors such as the level of customization, number of pages,
+            and additional features required. Our goal is to provide a solution that
+            fits your budget while delivering a high-quality, impactful website.
+            <mark id="photography"
+              >Our pricing ranges from a minimum of 500€/3months to a maximum of
+              900€/3months with a 3 month contract. For website creation, we
+              offer a 3-month contract that includes ongoing maintenance and
+              insurance for the site during this period.
+            </mark>
+            This ensures that your website remains up-to-date and continues to perform
+            optimally.
+          </p>
+          <h4>Photography</h4>
+          <p>
+            While our main focus is on providing top-tier web development
+            services, we also offer professional photography as an optional
+            addition. This service is perfect for clients who need high-quality
+            images to enhance their website's visual appeal and user experience.
+            We use a Sony α7 III camera with a Viltrox 75mm lens, ensuring
+            sharp, detailed images that can bring your website to life. This
+            service is entirely optional, and not necessary. <br /><br />
+            Pricing for this service varies depending on the number of photos you
+            need and the time required to capture them, making it flexible to fit
+            your specific requirements. Our photography services are priced to offer
+            both value and quality.
+            <mark
+              >The cost ranges from a minimum of 80€ to a maximum of 150€.</mark
+            >
+            This pricing structure ensures that we can meet a variety of needs and
+            budgets, while providing exceptional quality and service.
+            <br /><br />
+            This service is entirely optional, allowing you to choose exactly what
+            you need for your project.
+          </p>
+          <h4>Search Engine Optimization</h4>
+          <p>
+            In addition to our main web development services, we highly
+            recommend our SEO (Search Engine Optimization) services. SEO is
+            crucial for enhancing your website's visibility and driving more
+            organic traffic by helping your site reach the top of Google search
+            results. This service is designed to optimize your website's content
+            and structure, ensuring it is search engine friendly. <br /><br />
+            The cost of our SEO services is reasonable, and investing in SEO can
+            significantly increase your website's potential to attract and engage
+            more visitors. We tailor our strategies to align with your business goals,
+            making this an essential addition for any modern website. <br /><br
+            />
+            To ensure clarity and transparency, we want to inform you that the
+            <mark>maximum price for SEO will not exceed 100€</mark>
+            . This cap allows you to plan your budget effectively, knowing the upper
+            limit of potential costs.
+          </p><div id="instructions__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Payment Instructions</h3>
+          <p>
+            At Alpen Inc. we discuss and finalize the cost of our services
+            during a consultation call to ensure there are no surprises. Payment
+            is due only after the completion of the project and once you are
+            fully satisfied with the outcome. To accommodate your needs,
+            <mark>we offer several payment methods</mark>. We
+            <mark>highly recommend using Stripe</mark> for its ease and security,
+            allowing you to pay online with just a few clicks. Additionally, <mark
+              >we accept all major Visa cards</mark
+            >, providing another reliable and straightforward online payment
+            option. For clients who prefer a more personal approach or require
+            alternative arrangements,
+            <mark>we are also happy to accept payments in person</mark>. These
+            diverse payment options are designed to ensure that managing the
+            financial aspect of our services is hassle-free and secure for
+            everyone.
+          </p><div id="contract__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Three-Month Contract Overview</h3>
+          <p>
+            For our website development services, we implement a 3-month
+            contract to ensure that every new website we build is supported
+            through its initial live phases. This duration includes dedicated
+            maintenance and necessary updates, which are crucial for the optimal
+            performance and security of your website. The contract is designed
+            not only to address any immediate issues that may arise post-launch
+            but also to optimize the site's functionality and user experience.
+            This approach is our way of ensuring that the website continues to
+            serve your business effectively and securely, providing peace of
+            mind and stability during the crucial early stages of its
+            deployment. <br /><br />
+            Upon finalizing the terms of our 3-month contract for website development,
+            we will issue an invoice that details the scope of work, pricing, and
+            the services included during the contract period. This invoice serves
+            as the formal agreement between [Your Company Name] and you, the client.
+            You will be asked to sign this invoice to acknowledge your understanding
+            and acceptance of the terms.
+            <br />
+            This step is crucial as it ensures transparency and mutual agreement
+            on the expectations and responsibilities outlined in the contract, thereby
+            safeguarding both parties and ensuring a smooth collaboration.
+          </p><div id="guide__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Working Guide</h3>
+          <p>
+            By this so called "Working Guide", we aim to provide comprehensive
+            instructions that will guide you step-by-step towards working with
+            us successfuly. We lay out a clear path to follow, offering
+            actionable advice and detailed directions to ensure you stay on
+            track. <br /><br />
+            Before we begin your project, we first schedule a meeting call to discuss
+            your specific goals and requirements. This initial consultation is crucial
+            as it helps us understand your vision and expectations thoroughly. By
+            aligning our approach with your objectives from the outset, we can tailor
+            our services to best meet your needs. This step ensures that we start
+            on a solid foundation, paving the way for a successful project delivery.
+            <br /><br />
+            Following our initial consultation and once we have a clear understanding
+            of your project requirements, we will provide you with a detailed pricing
+            estimate. This estimate reflects the scope of work discussed and is designed
+            to offer transparency and predictability in budgeting. Alongside the
+            estimate, we will issue an invoice that outlines the agreed-upon services.
+            You will be asked to sign this invoice to confirm your acceptance of
+            the terms and to formalize our engagement. This process ensures that
+            all aspects of the project are clear and agreed upon before we commence
+            work.
+            <br /><br />
+            Once we have begun work on your project, you can expect completion within
+            a two-week period. This timeline allows us to thoroughly address all
+            aspects of your project while ensuring that it meets your specifications
+            and our standards of excellence. We believe in keeping our processes
+            efficient and our delivery prompt, so you can start benefiting from your
+            new website as soon as possible.
+          </p><div id="refunds__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Refunds</h3>
+          <p>
+            Please note that once the contract is signed and we begin work on
+            your project, refunds are not available. This policy is in place
+            because resources and time are allocated to your project immediately
+            to ensure timely and efficient progress. However, we understand that
+            project requirements can evolve, and we are committed to
+            accommodating changes that you may need during the development
+            process. You are welcome to discuss any modifications or additions
+            with us, and we will do our utmost to incorporate them seamlessly
+            into the project to meet your evolving needs. <br />
+            <br />
+            Thank for your understanding.
+          </p><div id="assistance__section"></div>
+        </div>
+
+        <div class="terms">
+          <h3>Need Further Assistance?</h3>
+          <p>
+            If you have any questions or require additional information about
+            our services, please do not hesitate to contact us. We understand
+            that clarity is crucial when choosing the right services for your
+            needs, and we are here to provide all the assistance you require.
+            <br />
+            You can reach us via email at alpencyprus@gmail.com or call us directly
+            at 357 99725225. Whether it's a simple query or a detailed discussion,
+            we're here to help you understand exactly what we can offer and how it
+            can benefit your business.
+          </p>
+        </div>
+
+        <div class="terms">
+          <h3></h3>
+          <p>
+            The information contained in this web site is subject to change
+            without notice. <br />
+            Copyright © 1997-2009 Apple Inc. All rights reserved. <br />
+            Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA.
+            <br /><br />
+            Updated by The Apple Legal Team on Nov. 20, 2009
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

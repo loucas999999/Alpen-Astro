@@ -1,0 +1,294 @@
+---
+const title = "Alpen - Book a Meeting";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import MainHead from "../layouts/MainHead.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        background: #f5f5f5;
+        height: 130vh;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+
+
+      /* HEADER SECTION */
+
+      img {
+        height: 3rem;
+        width: auto;
+      }
+
+      .header__main-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+        height: 8vh;
+        background: rgba(128, 128, 128, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background-color: #daa520;
+      }
+
+      .header__heading-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header__nav-div ul {
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        height: 100%;
+        list-style-type: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+      }
+
+      .header__nav-div a,
+      .h1 a {
+        color: white;
+        text-decoration: none;
+        transition: 0.5s ease;
+      }
+
+      .header__nav-div a:hover,
+      .h1 a:hover {
+        filter: drop-shadow(white 0px 0px 10px);
+        color: white;
+        text-align: center;
+      }
+
+      .header__socials-div ul,
+      svg {
+        display: flex;
+        gap: 2rem;
+        height: 100%;
+        list-style-type: none;
+        fill: white;
+      }
+
+      .icons {
+        transition: 0.5s ease;
+        fill: white;
+      }
+
+      .icons:hover {
+        filter: drop-shadow(white 0px 0px 8px);
+      }
+
+      .cyprus {
+        height: 30px;
+        width: auto;
+      }
+
+      .social3 {
+        display: flex;
+        align-items: center;
+      }
+
+      .centering__div a {
+        text-decoration: none;
+      }
+
+      /* <================= FORM SECTION =================> */
+
+      section {
+        margin-top: 10rem;
+        height: 100vh;
+      }
+    </style>
+
+  <body>
+    <header>
+      <div class="header__main-div">
+        <div class="header__heading-div">
+          <h1 class="h1">
+            <a href="/Home/index.html"
+              ><img
+                class="header__alpen-logo"
+                src="../Images/Logooooo.png"
+                alt="Transparent Alpen logo image"
+              /></a
+            >
+          </h1>
+        </div>
+        <div class="header__socials-div">
+          <ul>
+            <li class="header__socials social1">
+              <a href="https://www.instagram.com/alpency/">
+                <svg
+                  class="icons icon1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+                  ></path>
+                  <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials social2">
+              <a href="mailto:alpencyprus@gmail.com">
+                <svg
+                  class="icons icon2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials social3">
+              <a
+                href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLCgoNGD0YkuuLCgqLQYAMb0Ftw&q=cyprus&rlz=1C5CHFA_enCY1043CY1043&oq=cyprus&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxiDARixAxiABBiKBTIGCAAQRRg8MgYIARBFGDsyEggCEC4YQxiDARixAxiABBiKBTIGCAMQRRg7MgYIBBAjGCcyDAgFEAAYQxiABBiKBTIGCAYQRRg8MgYIBxBFGD3SAQgyMDUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+              >
+                <img
+                  class="cyprus icons"
+                  src="../Images/cyprus-flag-national-europe-emblem-icon-illustration-abstract-design-element-free-vector.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <div
+        style="width: 100%; height: 100%; overflow: scroll"
+        id="my-cal-inline"
+      >
+      </div>
+      <script type="text/javascript">
+        (function (C, A, L) {
+          let p = function (a, ar) {
+            a.q.push(ar);
+          };
+          let d = C.document;
+          C.Cal =
+            C.Cal ||
+            function () {
+              let cal = C.Cal;
+              let ar = arguments;
+              if (!cal.loaded) {
+                cal.ns = {};
+                cal.q = cal.q || [];
+                d.head.appendChild(d.createElement("script")).src = A;
+                cal.loaded = true;
+              }
+              if (ar[0] === L) {
+                const api = function () {
+                  p(api, arguments);
+                };
+                const namespace = ar[1];
+                api.q = api.q || [];
+                if (typeof namespace === "string") {
+                  cal.ns[namespace] = cal.ns[namespace] || api;
+                  p(cal.ns[namespace], ar);
+                  p(cal, ["initNamespace", namespace]);
+                } else p(cal, ar);
+                return;
+              }
+              p(cal, ar);
+            };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", { origin: "https://cal.com" });
+        Cal("inline", {
+          elementOrSelector: "#my-cal-inline",
+          calLink: "alpen/meeting-with-alpen",
+          layout: "month_view",
+        });
+        Cal("ui", {
+          styles: { branding: { brandColor: "#daa520" } },
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
+      </script>
+    </section>
+
+    <Footer></Footer>
+
+    <script>
+      var TrandingSlider = new Swiper(".tranding-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

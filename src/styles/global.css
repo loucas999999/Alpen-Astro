@@ -1,0 +1,219 @@
+/* CSS RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* HEADER SECTION */
+img {
+  height: 3rem;
+  width: auto;
+}
+
+.header__main-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  height: 8vh;
+  background: rgba(128, 128, 128, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header__heading-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav-div ul {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.header__nav-div a,
+.h1 a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.header__nav-div a:hover,
+.h1 a:hover {
+  filter: drop-shadow(white 0px 0px 10px);
+  color: white;
+  text-align: center;
+}
+
+.header__socials-div ul,
+svg {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  list-style-type: none;
+  fill: white;
+}
+
+.icons {
+  transition: 0.5s ease;
+  fill: white;
+}
+
+.icons:hover {
+  filter: drop-shadow(white 0px 0px 8px);
+}
+
+.cyprus {
+  height: 30px;
+  width: auto;
+}
+
+.social3 {
+  display: flex;
+  align-items: center;
+}
+
+.social1 {
+  display: flex;
+  align-items: center;
+}
+
+.centering__div a {
+  text-decoration: none;
+}
+
+#langButton {
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+/* FOOTER SECTION  */
+
+footer {
+  background-image: url(../assets/planetmitch-aunger-dOZmKYS5CDw-unsplash.jpg);
+  background-size: 260%;
+  background-position: 0% 10%;
+  height: 85vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #f6f9fc;
+}
+
+.second__footer {
+  height: 100%;
+  width: 50%;
+}
+
+footer ul a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+.main__footer-toptext {
+  display: flex;
+  justify-content: center;
+}
+
+.text__footer {
+  width: 80ch;
+  padding-top: 2rem;
+}
+
+.footer__hr-undertext {
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: white 0.1px solid;
+}
+
+.footer__ul-list {
+  display: flex;
+  justify-content: left;
+  margin: 0 2rem;
+  padding-top: 3rem;
+}
+
+.text__under-ul {
+  padding-top: 3rem;
+}
+
+.text__under-ul a:hover {
+  text-decoration: underline;
+}
+
+.text__under-ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__text-bottom {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__main-text-bottom-div,
+.footer__main-text-bottom-div a {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* <=============== END OF FOOTER ===============> */

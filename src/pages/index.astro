@@ -1,170 +1,18 @@
 ---
-import srcImage from "../assets/Coding.webp"
+import srcImage from "../assets/Coding.webp";
+import Images from "../assets/image 119.svg";
+import { Image } from "astro:assets";
+// Head Layout
+import MainLayout from "../layouts/MainLayouts.astro";
+import MainHead from "../layouts/MainHead.astro";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/Alpen New Icon.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Alpen - Home Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+  <MainHead>
     <style>
-      /* CSS RESETS */
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      * {
-        margin: 0;
-      }
-
-      body {
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      img,
-      picture,
-      video,
-      canvas,
-      svg {
-        display: block;
-        max-width: 100%;
-      }
-
-      input,
-      button,
-      textarea,
-      select {
-        font: inherit;
-      }
-
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        overflow-wrap: break-word;
-      }
-
-      #root,
-      #__next {
-        isolation: isolate;
-      }
-
-      /* HEADER SECTION */
-      img {
-        height: 3rem;
-        width: auto;
-      }
-
-      .header__main-div {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 3rem;
-        height: 8vh;
-        background: rgba(128, 128, 128, 0.25);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-      }
-
-      .header__heading-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .header__nav-div ul {
-        font-size: x-large;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        height: 100%;
-        list-style-type: none;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-      }
-
-      .header__nav-div a,
-      .h1 a {
-        color: white;
-        text-decoration: none;
-        transition: 0.5s ease;
-      }
-
-      .header__nav-div a:hover,
-      .h1 a:hover {
-        filter: drop-shadow(white 0px 0px 10px);
-        color: white;
-        text-align: center;
-      }
-
-      .header__socials-div ul,
-      svg {
-        display: flex;
-        gap: 2rem;
-        height: 100%;
-        list-style-type: none;
-        fill: white;
-      }
-
-      .icons {
-        transition: 0.5s ease;
-        fill: white;
-      }
-
-      .icons:hover {
-        filter: drop-shadow(white 0px 0px 8px);
-      }
-
-      .cyprus {
-        height: 30px;
-        width: auto;
-      }
-
-      .social3 {
-        display: flex;
-        align-items: center;
-      }
-
-      .social1 {
-        display: flex;
-        align-items: center;
-      }
-
-      .centering__div a {
-        text-decoration: none;
-      }
-
       /* <============FIRST SECTION OF WEBSITE ===============> */
 
       .first__section {
@@ -316,7 +164,7 @@ import srcImage from "../assets/Coding.webp"
       }
 
       .greybox1 {
-        background-image: url(/Communication.webp);
+        background-image: url(../assets/Communication.webp);
         background-size: cover;
       }
 
@@ -571,86 +419,6 @@ import srcImage from "../assets/Coding.webp"
         animation: fadeInText 1s ease-in-out;
       }
 
-      /* FOOTER SECTION  */
-
-      footer {
-        background-image: url(../assets/);
-        background-size: 260%;
-        background-position: 0% 10%;
-        height: 85vh;
-        font-family: "Roboto", sans-serif;
-        display: flex;
-        justify-content: center;
-        color: #f6f9fc;
-      }
-
-      .second__footer {
-        height: 100%;
-        width: 50%;
-      }
-
-      footer ul a {
-        text-decoration: none;
-        list-style-type: none;
-        color: white;
-      }
-
-      footer ul li:hover {
-        text-decoration: underline;
-      }
-
-      .main__footer-toptext {
-        display: flex;
-        justify-content: center;
-      }
-
-      .text__footer {
-        width: 80ch;
-        padding-top: 2rem;
-      }
-
-      .footer__hr-undertext {
-        margin: 0 auto;
-        margin-top: 2rem;
-        border: white 0.1px solid;
-      }
-
-      .footer__ul-list {
-        display: flex;
-        justify-content: left;
-        margin: 0 2rem;
-        padding-top: 3rem;
-      }
-
-      .text__under-ul {
-        padding-top: 3rem;
-      }
-
-      .text__under-ul a:hover {
-        text-decoration: underline;
-      }
-
-      .text__under-ul a {
-        color: white;
-        text-decoration: none;
-      }
-
-      .footer__text-bottom {
-        padding-top: 3rem;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .footer__main-text-bottom-div,
-      .footer__main-text-bottom-div a {
-        display: flex;
-        gap: 1rem;
-        text-decoration: none;
-        color: white;
-      }
-
-      /* <=============== END OF FOOTER ===============> */
-
       /* JAVASCRIPT FADE IN ANIMATION  */
 
       .hidden {
@@ -674,80 +442,12 @@ import srcImage from "../assets/Coding.webp"
         transform: translateY(0px);
         transform: translateX(0px);
       }
-
-      #langButton {
-        color: white;
-        cursor: pointer;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-      }
     </style>
-  </head>
+  </MainHead>
 
   <body>
     <section class="first__section">
-      <div class="header__main-div">
-        <div class="header__heading-div">
-          <h1 class="h1">
-            <a href="#"
-              ><img
-                class="header__alpen-logo"
-                src="/Logooooo.png"
-                alt="Transparent Alpen logo image"
-              />
-            </a
-            >
-          </h1>
-        </div>
-        <div class="header__nav-div">
-          <ul>
-            <li class="header__nav-li header__list1" id="nav1">
-              <a href="/Portfolio/index.html">Portfolio</a>
-            </li>
-            <li class="header__nav-li header__list2">
-              <a id="test" href="#">Services</a>
-            </li>
-            <li class="header__nav-li header__list3">
-              <a href="#">Guide & Info</a>
-            </li>
-            <li class="header__nav-li header__list4">
-              <a id="pricing__js" href="#">Photography</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__socials-div">
-          <ul>
-            <li class="header__socials social1">
-              <div id="langButton" onclick="toggleLanguage()">English</div>
-            </li>
-            <li class="header__socials social2">
-              <a href="mailto:alpencyprus@gmail.com">
-                <svg
-                  class="icons icon2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="header__socials social3">
-              <a
-                href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLCgoNGD0YkuuLCgqLQYAMb0Ftw&q=cyprus&rlz=1C5CHFA_enCY1043CY1043&oq=cyprus&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxiDARixAxiABBiKBTIGCAAQRRg8MgYIARBFGDsyEggCEC4YQxiDARixAxiABBiKBTIGCAMQRRg7MgYIBBAjGCcyDAgFEAAYQxiABBiKBTIGCAYQRRg8MgYIBxBFGD3SAQgyMDUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
-              >
-                <img
-                  class="cyprus icons"
-                  src="/cyprus-flag-national-europe-emblem-icon-illustration-abstract-design-element-free-vector.png"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Header />
       <div class="first__section__main-div container">
         <div class="centering__div">
           <!-- TESTING LANGUAGE CHANGE -->
@@ -761,7 +461,7 @@ import srcImage from "../assets/Coding.webp"
           <p class="container__paragraph lefting animate-delay">
             Web Development Agency
           </p>
-          <a href="/Meeting/index.html"
+          <a href="/meeting/"
             ><button class="container__btn lefting animate-delay"
               >Book a call</button
             ></a
@@ -922,7 +622,7 @@ import srcImage from "../assets/Coding.webp"
           >
         </div>
         <div class="further__info-right">
-          <img class="testing-image" src="/image 119.svg" />
+          <Image class="testing-image" src={Images} alt="" />
           <div class="avatar__shadow"></div>
         </div>
       </div>
@@ -948,9 +648,7 @@ import srcImage from "../assets/Coding.webp"
             ><button class="photography__btn fade__In">Learn More</button></a
           >
         </div>
-        <div class="photography__right-div">
-          <img src="" />
-        </div>
+        <div class="photography__right-div"></div>
       </div>
     </section>
 
@@ -1100,126 +798,104 @@ import srcImage from "../assets/Coding.webp"
         </div>
       </div>
     </section>
+    <Footer />
+    <script>
+      // Scroll In Animations
 
-    <footer>
-      <div class="second__footer">
-        <div class="main__footer-toptext">
-          <div class="text__footer">
-            <p>
-              It is highly reccomended to carefully read the privacy policies
-              and terms of conditions for every client because it ensures that
-              you're fully informed about how your engaging with our team and
-              services, what rights you retain as a client, and the obligations
-              you're agreeing to. These documents outline the legal framework
-              governing your use of services or products, including the pricing
-              but also the time period needed for the completion. Understanding
-              these details helps protect your rights and prevent
-              misunderstandings. It also empowers you to make informed decisions
-              about engaging with our services, ensuring that your consent is
-              truly informed and based on a clear comprehension of how we work.
-            </p>
-          </div>
-        </div>
-        <hr class="footer__hr-undertext" />
-        <div class="footer__ul-list">
-          <div class="footer__first-ul">
-            <ul>
-              <h3>Terms & Conditions</h3>
-              <a href="/TERMS & PRIVACIES/index.html">
-                <li>Agreement</li>
-              </a>
-              <a href="/TERMS & PRIVACIES/index.html#term2">
-                <li>Content</li>
-              </a>
-              <a href="/TERMS & PRIVACIES/index.html#term3">
-                <li>Third-Party Services</li>
-              </a>
-              <a href="/TERMS & PRIVACIES/index.html#term4">
-                <li>Pricing</li>
-              </a>
-              <a href="/TERMS & PRIVACIES/index.html#term5">
-                <li>Violation</li>
-              </a>
-              <a href="/TERMS & PRIVACIES/index.html#term6">
-                <li>Feedback & Info</li>
-              </a>
-            </ul>
-          </div>
-          <div class="footer__second-ul">
-            <ul>
-              <h3>Alpen's Policies</h3>
-              <a href="/Privacy Terms/index.html">
-                <li>Introduction</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy2">
-                <li>Data collection</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy3">
-                <li>Data use</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy4">
-                <li>Data Sharing</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy5">
-                <li>User Rights</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy6">
-                <li>Policy Updates</li>
-              </a>
-              <a href="/Privacy Terms/index.html#privacy7">
-                <li>Contact Information</li>
-              </a>
-            </ul>
-          </div>
-          <div class="footer__third-ul">
-            <ul>
-              <h3>Guide & Info</h3>
-              <a href="/Working Guide/index.html">
-                <li>Why we started</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div1">
-                <li>Our Services</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div2">
-                <li>Project Details</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div3">
-                <li>Payment Instructions</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div4">
-                <li>Contract</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div5">
-                <li>Working Guide</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div6">
-                <li>Refunds</li>
-              </a>
-              <a href="/Working Guide/index.html#scroll__to-div7">
-                <li>Further Assistance</li>
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div class="text__under-ul">
-          <p>
-            Any issues with the website contact
-            <a href="mailto:example@gmail.com">alpencyprus@gmail.com</a> or call
-            at <a href="tel:357 99725225">+357 99725225</a>
-          </p>
-          <p>You can find us on @alpency on Instagram</p>
-        </div>
-        <hr class="footer__hr-undertext" />
-        <div class="footer__text-bottom">
-          <div class="footer__text-bottom-left">
-            Copyright © 2024 Alpen Inc. All rights reserved.
-          </div>
-          <div class="footer__main-text-bottom-div">
-            <div class="footer__text-bottom-right"><a href="">site map</a></div>
-            <div class="footer__text-bottom-right">Cyprus</div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
+
+      const leftElements = document.querySelectorAll(".lefting");
+      leftElements.forEach((el) => observer.observe(el));
+
+      const fadeIn = document.querySelectorAll(".fade__In");
+      fadeIn.forEach((el) => observer.observe(el));
+
+      // Scroll To Services Section Animation
+
+      function scrollToElement(elementSelector, instance = 0) {
+        const elements = document.querySelectorAll(elementSelector);
+        if (elements.length > instance) {
+          elements[instance].scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      const services = document.querySelector("#test");
+
+      services.addEventListener("click", () => {
+        scrollToElement(".second-section");
+      });
+
+      const guideAndInfo = document.querySelector(".header__list3");
+
+      guideAndInfo.addEventListener("click", () => {
+        scrollToElement(".testing123");
+      });
+
+      const Photography = document.querySelector(".header__list4");
+
+      Photography.addEventListener("click", () => {
+        scrollToElement(".scroll__to-photography");
+      });
+
+      // FREQUENTLY ASKED QUESTIONS
+
+      const faqs = document.querySelectorAll(".faq");
+
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+
+      // CHANGE LANGUAGE
+
+      // Current language key
+      let currentLang = "el";
+
+      const lang = {
+        en: {
+          nav1: "Χαρτοφυλάκιο",
+          greeting: "Effortlessly",
+          description: "This is an example of a multi-language website.",
+        },
+        el: {
+          nav1: "Χαρτοφυλάκιο",
+          greeting: "Δκιαολε",
+          description: "Ceci est un exemple de site web multilingue.",
+        },
+      };
+
+      function toggleLanguage() {
+        // Toggle the current language
+        currentLang = currentLang === "en" ? "el" : "en";
+
+        // Update texts on the page
+        document.getElementById("greeting").textContent =
+          lang[currentLang].greeting;
+        document.getElementById("description").textContent =
+          lang[currentLang].description;
+        document.getElementById("nav1").textContent = lang[currentLang].nav1;
+
+        // Update button text to show the language that can be switched to next
+        document.getElementById("langButton").textContent =
+          lang[currentLang].button;
+      }
+
+      // Set initial language and button label
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleLanguage();
+      });
+    </script>
   </body>
 </html>
