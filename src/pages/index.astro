@@ -124,15 +124,15 @@ import Header from "../components/Header.astro";
       }
 
       .boxes {
+        font-family: "Roboto", sans-serif;
         height: 750px;
         width: 600px;
         background-color: white;
         padding: 6px;
         border-radius: 0.5rem;
-        box-shadow: 1px 33px 58px -8px rgba(56, 56, 56, 0.75);
-        -webkit-box-shadow: 1px 33px 58px -17px rgba(56, 56, 56, 0.75);
-        -moz-box-shadow: 1px 33px 58px -17px rgba(56, 56, 56, 0.75);
-        font-family: "Roboto", sans-serif;
+        box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
       }
 
       .box1,
@@ -147,6 +147,9 @@ import Header from "../components/Header.astro";
       .box3:hover,
       .box4:hover {
         transform: scale(1.02);
+        box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
       }
 
       .extra-left {
@@ -616,8 +619,9 @@ import Header from "../components/Header.astro";
             here.
           </h3>
           <a href="/guide/"
-            ><button class="further__info-btn lefting scroll__to-photography"
-              >Learn Everything</button
+            ><button
+              class="further__info-btn lefting scroll__to-photography"
+              id="photography__section">Learn Everything</button
             ></a
           >
         </div>
@@ -806,8 +810,6 @@ import Header from "../components/Header.astro";
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
-          } else {
-            entry.target.classList.remove("show");
           }
         });
       });
