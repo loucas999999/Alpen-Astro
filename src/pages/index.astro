@@ -2,7 +2,6 @@
 import srcImage from "../assets/Coding.webp";
 import Images from "../assets/image 119.svg";
 import { Image } from "astro:assets";
-// Head Layout
 import MainLayout from "../layouts/MainLayouts.astro";
 import MainHead from "../layouts/MainHead.astro";
 import "../styles/global.css";
@@ -11,10 +10,9 @@ import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-  <MainHead>
+  <MainHead title="Alpen - Home"></MainHead>
     <style>
       /* <============FIRST SECTION OF WEBSITE ===============> */
-
       .first__section {
         background-image: url(../assets/pexels-pixabay-256643.jpg);
         background-size: 180%;
@@ -130,9 +128,9 @@ import Header from "../components/Header.astro";
         background-color: white;
         padding: 6px;
         border-radius: 0.5rem;
-        box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 12px 42px -20px rgba(0,0,0,0.75);
+        box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
       }
 
       .box1,
@@ -446,7 +444,6 @@ import Header from "../components/Header.astro";
         transform: translateX(0px);
       }
     </style>
-  </MainHead>
 
   <body>
     <section class="first__section">
