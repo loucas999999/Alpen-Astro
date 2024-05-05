@@ -4,6 +4,8 @@ import "../styles/global.css";
 import Rest from "../assets/MU43_light_grey_melamine_fullHD.jpeg";
 import Footer from "../components/Footer.astro";
 import MainHead from "../layouts/MainHead.astro";
+import Image from "../assets/Logooooo.png";
+import Cyprus from "../assets/cyprus-flag-national-europe-emblem-icon-illustration-abstract-design-element-free-vector.png";
 ---
 
 <html lang="en">
@@ -29,6 +31,19 @@ import MainHead from "../layouts/MainHead.astro";
       /* font-size: 62.5%; */
       font-family: "Montserrat", sans-serif;
     }
+
+    .header__main-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+        height: 8vh;
+        background: rgba(128, 128, 128, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background-color: #daa520;
+      }
 
     /* @media (min-width: 1440px) {
       html {
@@ -68,7 +83,6 @@ import MainHead from "../layouts/MainHead.astro";
     }
 
     .container {
-      max-width: 124rem;
       padding: 0 1rem;
       margin: 0 auto;
     }
@@ -84,7 +98,8 @@ import MainHead from "../layouts/MainHead.astro";
     }
 
     #tranding {
-      padding: 4rem 0;
+      padding-top: 5rem;
+      height: 140vh;
     }
 
     @media (max-width: 1440px) {
@@ -158,7 +173,7 @@ import MainHead from "../layouts/MainHead.astro";
     }
 
     .rating ion-icon {
-      color: var(--primary);
+      color: #ffdf00;
     }
 
     .swiper-slide-shadow-left,
@@ -168,7 +183,7 @@ import MainHead from "../layouts/MainHead.astro";
 
     .tranding-slider-control {
       position: relative;
-      bottom: 2rem;
+      bottom: 4rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -208,18 +223,17 @@ import MainHead from "../layouts/MainHead.astro";
     }
 
     .tranding-slider-control .slider-arrow {
-      background: var(--white);
+      background: #daa520;
       width: 3.5rem;
       height: 3.5rem;
       border-radius: 50%;
       left: 42%;
       transform: translateX(-42%);
-      filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
     }
 
     .tranding-slider-control .slider-arrow ion-icon {
       font-size: 2rem;
-      color: #daa520;
+      color: black;
     }
 
     .tranding-slider-control .slider-arrow::after {
@@ -229,11 +243,7 @@ import MainHead from "../layouts/MainHead.astro";
     .tranding-slider-control .swiper-pagination {
       position: relative;
       width: 15rem;
-      bottom: 1rem;
-    }
-
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-      filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+      top: 1.6rem;
     }
 
     .tranding-slider-control
@@ -245,7 +255,54 @@ import MainHead from "../layouts/MainHead.astro";
 
   <body>
     <section class="testing__section">
-      <Header />
+      <header>
+        <div class="header__main-div">
+            <div class="header__heading-div">
+              <h1 class="h1">
+                <a href="/"
+                  ><img
+                    class="header__alpen-logo"
+                    src={Image.src}
+                    alt=""
+                  />
+                </a
+                >
+              </h1>
+            </div>
+            <div class="header__socials-div">
+              <ul>
+                <li class="header__socials social1">
+                  <div id="langButton" onclick="toggleLanguage()">English</div>
+                </li>
+                <li class="header__socials social2">
+                  <a href="mailto:alpencyprus@gmail.com">
+                    <svg
+                      class="icons icon2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__socials social3">
+                  <a
+                    href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLCgoNGD0YkuuLCgqLQYAMb0Ftw&q=cyprus&rlz=1C5CHFA_enCY1043CY1043&oq=cyprus&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxiDARixAxiABBiKBTIGCAAQRRg8MgYIARBFGDsyEggCEC4YQxiDARixAxiABBiKBTIGCAMQRRg7MgYIBBAjGCcyDAgFEAAYQxiABBiKBTIGCAYQRRg8MgYIBxBFGD3SAQgyMDUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                  >
+                    <img
+                      class="cyprus icons"
+                      src={Cyprus.src}
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </header>
       <div id="tranding">
         <div class="container">
           <h3 class="text-center section-subheading">- Thank You -</h3>
