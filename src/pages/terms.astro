@@ -1,6 +1,8 @@
 ---
 import Logo from "../assets/Logooooo.png";
 import Icon from "../assets/Official-logo.png";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -17,7 +19,7 @@ import Icon from "../assets/Official-logo.png";
       rel="stylesheet"
     />
     <style>
-      /* CSS RESETS */
+      /* <=================IGNORE CSS RESETS===================> */
       *,
       *::before,
       *::after {
@@ -110,7 +112,7 @@ import Icon from "../assets/Official-logo.png";
         flex-direction: column;
         align-items: center;
         margin-top: 3rem;
-        height: 500vh;
+        height: 330vh;
         font-family: "Poppins", sans-serif;
       }
 
@@ -141,6 +143,114 @@ import Icon from "../assets/Official-logo.png";
 
       .main__div-section {
         max-width: 100ch;
+      }
+
+      /* MEDIA QUERIES */
+      @media (max-width: 1024px) {
+
+        .main-section {
+          height: 360vh;
+        }
+
+        img {
+          height: 2.5rem;
+        }
+
+        .header__main-div {
+          padding: 0 2rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        .main__div-section {
+          max-width: 80ch;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .main-section {
+          height: 450vh;
+        }
+
+        img {
+          height: 2.2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        .main__div-section {
+          max-width: 60ch;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .main-section {
+          height: 460vh;
+          padding-bottom: 1rem;
+        }
+
+        img {
+          height: 2.2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        .main__div-section {
+          padding: 0 1rem;
+        }
+
+        p {
+            padding-bottom: 0.5rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .main-section {
+          height: 410vh;
+        }
+
+        .header__main-div {
+          height: 6vh;
+        }
+
+        img {
+          height: 2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
+        }
       }
     </style>
   </head>
@@ -285,19 +395,18 @@ import Icon from "../assets/Official-logo.png";
         <div class="terms term6">
           <h3>Feedback and Information</h3>
           <p>
-            Any feedback you provide at this site shall be deemed to be
-            non-confidential. Alpen shall be free to use such information on an
-            unrestricted basis. <br />
-            <br />
-            The information contained in this web site is subject to change without
-            notice. <br />
-            Copyright © 2024 Alpen Inc. All rights reserved. <br />
-            Alpen Inc., Ayia Napa, Ammoxostos, CY <br />
-            Updated by The Alpen Team on May 1, 2024
+            The information contained in this web site is subject to change
+            without notice. <br />
+            Copyright © 2022-2024 Alpen Inc. All rights reserved. <br />
+            Alpen Inc., Ayia Napa, Famagusta, CY.
+            <br /><br />
+            Updated by The Alpen Legal Team on Nov. 20, 2023
           </p>
         </div>
       </div>
     </section>
+
+    <Footer></Footer>
 
     <script src="script.js" defer></script>
   </body>
