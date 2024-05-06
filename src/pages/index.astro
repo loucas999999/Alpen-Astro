@@ -318,108 +318,6 @@ import Header from "../components/Header.astro";
         cursor: pointer;
       }
 
-      /* <================= FAQS SECTION =================> */
-
-      .section__faq {
-        font-family: "Roboto", sans-serif;
-        display: flex;
-        padding: 5rem 0;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-      }
-
-      .section__faq__left-div {
-        width: 50%;
-        padding: 0 8rem;
-        display: flex;
-        justify-content: center;
-      }
-
-      .title {
-        font-size: 3rem;
-        margin: 2rem 0rem 1rem 0rem;
-      }
-
-      .faq__inform {
-        color: #daa520;
-        font-size: xx-large;
-        font-weight: 700;
-        padding-bottom: 1rem;
-      }
-
-      .faq {
-        max-width: 700px;
-        margin-top: 2rem;
-        padding-bottom: 1rem;
-        cursor: pointer;
-        border-bottom: #000000 solid 1px;
-      }
-
-      .question {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .question h3 {
-        font-size: 1.8rem;
-      }
-
-      .answer {
-        max-height: 0;
-        overflow: hidden;
-        /* transition: 1.4s ease; */
-      }
-
-      .answer p {
-        padding-top: 1rem;
-        line-height: 1.6;
-        font-size: 1.4rem;
-      }
-
-      .faq.active .answer {
-        max-height: 300px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
-      .question:hover {
-        color: #daa520;
-      }
-
-      .faq.active svg {
-        transform: rotate(-180deg);
-      }
-
-      svg {
-        fill: black;
-        transition: transform 0.2s ease-in;
-      }
-
-      .faq1.faq.active .answer {
-        max-height: 160px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
-      .faq2.faq.active .answer {
-        max-height: 160px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
-      .faq3.faq.active .answer {
-        max-height: 160px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
-      .faq4.faq.active .answer {
-        max-height: 230px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
-      .faq5.faq.active .answer {
-        max-height: 120px;
-        animation: fadeInText 1s ease-in-out;
-      }
-
       /* JAVASCRIPT FADE IN ANIMATION  */
 
       .hidden {
@@ -801,6 +699,7 @@ import Header from "../components/Header.astro";
     </section>
     <Footer />
     <script>
+      
       // Scroll In Animations
 
       const observer = new IntersectionObserver((entries) => {
@@ -855,45 +754,6 @@ import Header from "../components/Header.astro";
         faq.addEventListener("click", () => {
           faq.classList.toggle("active");
         });
-      });
-
-      // CHANGE LANGUAGE
-
-      // Current language key
-      let currentLang = "el";
-
-      const lang = {
-        en: {
-          nav1: "Χαρτοφυλάκιο",
-          greeting: "Effortlessly",
-          description: "This is an example of a multi-language website.",
-        },
-        el: {
-          nav1: "Χαρτοφυλάκιο",
-          greeting: "Δκιαολε",
-          description: "Ceci est un exemple de site web multilingue.",
-        },
-      };
-
-      function toggleLanguage() {
-        // Toggle the current language
-        currentLang = currentLang === "en" ? "el" : "en";
-
-        // Update texts on the page
-        document.getElementById("greeting").textContent =
-          lang[currentLang].greeting;
-        document.getElementById("description").textContent =
-          lang[currentLang].description;
-        document.getElementById("nav1").textContent = lang[currentLang].nav1;
-
-        // Update button text to show the language that can be switched to next
-        document.getElementById("langButton").textContent =
-          lang[currentLang].button;
-      }
-
-      // Set initial language and button label
-      document.addEventListener("DOMContentLoaded", function () {
-        toggleLanguage();
       });
     </script>
   </body>

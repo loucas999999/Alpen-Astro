@@ -5,14 +5,13 @@ import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpen - Guide & Info</title>
-    <link rel="icon" type="image/svg+xml" href={Icon.src}/>
+    <link rel="icon" type="image/svg+xml" href={Icon.src} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -83,7 +82,7 @@ import "../styles/global.css";
         justify-content: space-between;
         padding: 0 3rem;
         height: 8vh;
-        background-color: #DFB553;
+        background-color: #dfb553;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
@@ -113,7 +112,6 @@ import "../styles/global.css";
         flex-direction: column;
         align-items: center;
         margin-top: 3rem;
-        height: 600vh;
         font-family: "Poppins", sans-serif;
       }
 
@@ -164,6 +162,97 @@ import "../styles/global.css";
       mark {
         background-color: #fffe80;
       }
+
+      /* MEDIA QUERIES */
+      @media (max-width: 1024px) {
+        img {
+          height: 2.5rem;
+        }
+
+        .header__main-div {
+          padding: 0 2rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        .main__div-section {
+          max-width: 80ch;
+        }
+      }
+
+      @media (max-width: 800px) {
+        img {
+          height: 2.2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        .main__div-section {
+          max-width: 60ch;
+        }
+      }
+
+      @media (max-width: 600px) {
+        img {
+          height: 2.2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        .main__div-section {
+          padding: 0 2rem;
+        }
+
+        p {
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .header__main-div {
+          height: 6vh;
+        }
+
+        img {
+          height: 2rem;
+        }
+
+        .header__main-div {
+          padding: 0 1rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+      /* END OF MEDIA QUERIES */
     </style>
   </head>
 
@@ -431,7 +520,7 @@ import "../styles/global.css";
       </div>
     </section>
 
-    <Footer></Footer>
+    <Footer />
 
     <script src="script.js" defer></script>
   </body>
