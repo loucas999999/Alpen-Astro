@@ -327,7 +327,6 @@ footer ul li:hover {
 }
 
 @media (max-width: 700px) {
-
   .footer__ul-list {
     display: flex;
     flex-direction: column;
@@ -351,15 +350,18 @@ footer ul li:hover {
     transition: transform 0.2s ease-in;
   }
 
-  .footer__arrow.active svg {
-    transform: rotate(-180deg);
+  .footer__arrow svg {
+    transition: transform 0.3s ease; /* Smooth rotation transition */
   }
 
-  .footer__ul-list ul li {
-    display: none; /* Hide all LI initially */
+  .footer__arrow.active svg {
+    transform: rotate(180deg); /* Rotate SVG when active */
   }
-  
-  .footer__ul-list ul li.active {
-    display: list-item; /* Display LI when it's active */
+
+  .list-show {
+    display: none; /* Hide list items initially */
+  }
+  .list-show.active {
+    display: block; /* Show list items when active */
   }
 }

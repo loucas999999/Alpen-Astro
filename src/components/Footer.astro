@@ -70,25 +70,25 @@
             </svg>
           </div>
           <a href="/privacy/">
-            <li>Introduction</li>
+            <li class="list-show">Introduction</li>
           </a>
           <a href="/privacy/#data__section">
-            <li>Data collection</li>
+            <li class="list-show">Data collection</li>
           </a>
           <a href="/privacy/#data-use__section">
-            <li>Data use</li>
+            <li class="list-show">Data use</li>
           </a>
           <a href="/privacy/#data-sharing__section">
-            <li>Data Sharing</li>
+            <li class="list-show">Data Sharing</li>
           </a>
           <a href="/privacy/#user-rights__section">
-            <li>User Rights</li>
+            <li class="list-show">User Rights</li>
           </a>
           <a href="/privacy/#updates__section">
-            <li>Policy Updates</li>
+            <li class="list-show">Policy Updates</li>
           </a>
           <a href="/privacy/#contact__section">
-            <li>Contact Information</li>
+            <li class="list-show">Contact Information</li>
           </a>
         </ul>
       </div>
@@ -108,28 +108,28 @@
             </svg>
           </div>
           <a href="/guide/">
-            <li>Why we started</li>
+            <li class="list-show">Why we started</li>
           </a>
           <a href="/guide/#services__section">
-            <li>Our Services</li>
+            <li class="list-show">Our Services</li>
           </a>
           <a href="/guide/#go__to-duration">
-            <li>Project Details</li>
+            <li class="list-show">Project Details</li>
           </a>
           <a href="/guide/#instructions__section">
-            <li>Payment Instructions</li>
+            <li class="list-show">Payment Instructions</li>
           </a>
           <a href="/guide/#contract__section">
-            <li>Contract</li>
+            <li class="list-show">Contract</li>
           </a>
           <a href="/guide/#guide__section">
-            <li>Working Guide</li>
+            <li class="list-show">Working Guide</li>
           </a>
           <a href="/guide/#refunds__section">
-            <li>Refunds</li>
+            <li class="list-show">Refunds</li>
           </a>
           <a href="/guide/#assistance__section">
-            <li>Further Assistance</li>
+            <li class="list-show">Further Assistance</li>
           </a>
         </ul>
       </div>
@@ -160,4 +160,12 @@
 </footer>
 
 <script>
+  document.querySelectorAll(".footer__arrow h3").forEach(function (h3) {
+    h3.addEventListener("click", function () {
+      const ul = this.parentNode.parentNode; // Adjust according to your HTML structure
+      ul.querySelectorAll(".list-show").forEach(function (li) {
+        li.classList.toggle("active"); // Toggle visibility
+      });
+    });
+  });
 </script>
