@@ -285,6 +285,10 @@ footer ul li:hover {
   cursor: pointer;
 }
 
+.footer__ul-list li {
+  list-style-type: none;
+}
+
 .text__under-ul {
   padding-top: 3rem;
 }

@@ -160,12 +160,32 @@
 </footer>
 
 <script>
+  // document.querySelectorAll(".footer__arrow h3").forEach(function (h3) {
+  //   h3.addEventListener("click", function () {
+  //     const ul = this.parentNode.parentNode; 
+  //     ul.querySelectorAll(".list-show").forEach(function (li) {
+  //       li.classList.toggle("active");
+  //     });
+  //   });
+  // });
   document.querySelectorAll(".footer__arrow h3").forEach(function (h3) {
     h3.addEventListener("click", function () {
-      const ul = this.parentNode.parentNode; // Adjust according to your HTML structure
-      ul.querySelectorAll(".list-show").forEach(function (li) {
-        li.classList.toggle("active"); // Toggle visibility
-      });
+        const ul = this.parentNode.parentNode; 
+        const svg = this.nextElementSibling; // Assuming SVG is right before the h3 element
+
+        // Toggle active class on list items
+        ul.querySelectorAll(".list-show").forEach(function (li) {
+            li.classList.toggle("active");
+        });
+
+        // Check if any list item is active to determine rotation state
+        if (ul.querySelector(".list-show.active")) {
+            svg.style.transform = 'rotate(180deg)';
+        } else {
+            svg.style.transform = 'rotate(0deg)';
+        }
     });
-  });
+});
+
+
 </script>
