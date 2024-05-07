@@ -45,7 +45,10 @@ h6 {
   isolation: isolate;
 }
 
+/* CSS RESETS END  */
+
 /* HEADER SECTION */
+
 img {
   height: 3rem;
   width: auto;
@@ -138,6 +141,8 @@ svg {
   font-weight: 700;
 }
 
+/* END OF HEADER */
+
 /* <================= FAQS SECTION =================> */
 
 .section__faq {
@@ -188,7 +193,6 @@ svg {
 .answer {
   max-height: 0;
   overflow: hidden;
-  /* transition: 1.4s ease; */
 }
 
 .answer p {
@@ -239,6 +243,8 @@ svg {
   max-height: 120px;
   animation: fadeInText 1s ease-in-out;
 }
+
+/* END OF FAQ SECTION */
 
 /* FOOTER SECTION  */
 
@@ -355,18 +361,17 @@ footer ul li:hover {
   }
 
   .footer__arrow svg {
-    transition: transform 0.3s ease; /* Smooth rotation transition */
+    transition: transform 0.3s ease; 
   }
 
   .footer__arrow.active svg {
-    transform: rotate(180deg); /* Rotate SVG when active */
+    transform: rotate(180deg); 
   }
 
   .list-show {
-    display: none; /* Hide list items initially */
+    display: none; 
   }
   .list-show.active {
-    display: block; /* Show list items when active */
+    display: block; 
   }
 }
-
