@@ -10,6 +10,7 @@ import Cyprus from "../assets/cyprus-flag-national-europe-emblem-icon-illustrati
 <!doctype html>
 <html lang="en">
   <MainHead title="Alpen - Book a meeting" />
+
   <style>
     /* HEADER SECTION */
     .header__main-div {
@@ -44,24 +45,28 @@ import Cyprus from "../assets/cyprus-flag-national-europe-emblem-icon-illustrati
         padding: 0 1rem;
         height: 6vh;
       }
+
+      .header__socials-div ul,
+      svg {
+        gap: 1rem;
+      }
     }
 
     @media (max-width: 400px) {
       img {
         height: 2rem;
       }
-    }
 
-    .cyprus {
-      height: 20px;
-      width: auto;
-    }
+      .header__socials-div ul,
+      svg {
+        gap: 0.5rem;
+        height: 18px;
+      }
 
-    .header__socials-div ul,
-    svg {
-      gap: 1rem;
+      .cyprus {
+        height: 20px;
+      }
     }
-
   </style>
 
   <body>

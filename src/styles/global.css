@@ -57,7 +57,7 @@ img {
 .header__main-div {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 2rem;
   height: 8vh;
   background: rgba(128, 128, 128, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -97,11 +97,17 @@ img {
   text-align: center;
 }
 
+.header__socials-div {
+  display: flex;
+  align-items: center;
+}
+
 .header__socials-div ul,
 svg {
   display: flex;
   gap: 2rem;
-  height: 100%;
+  height: 24px;
+  width: auto;
   list-style-type: none;
   fill: white;
 }
