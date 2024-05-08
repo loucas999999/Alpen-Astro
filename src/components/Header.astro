@@ -1,67 +1,196 @@
 ---
 import Image from "../assets/Logooooo.png";
 import Cyprus from "../assets/cyprus-flag-national-europe-emblem-icon-illustration-abstract-design-element-free-vector.png";
+import open from "../assets/menu_FILL0_wght400_GRAD0_opsz48.svg";
+import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
 ---
 
 <header>
-    <div class="header__main-div">
-        <div class="header__heading-div">
-          <h1 class="h1">
-            <a href="#"
-              ><img
-                class="header__alpen-logo"
-                src={Image.src}
-                alt=""
-              />
-            </a
+  <div class="header__main-div">
+    <div class="header__heading-div">
+      <h1 class="h1">
+        <a href="#"
+          ><img class="header__alpen-logo" src={Image.src} alt="" />
+        </a>
+      </h1>
+    </div>
+    <div class="header__nav-div">
+      <ul>
+        <li class="header__nav-li hide__mobile header__list1" id="nav1">
+          <a href="/portfolio/">Portfolio</a>
+        </li>
+        <li class="header__nav-li hide__mobile header__list2">
+          <a id="test" href="#">Services</a>
+        </li>
+        <li class="header__nav-li hide__mobile header__list3">
+          <a href="#">Guide & Info</a>
+        </li>
+        <li class="header__nav-li hide__mobile header__list4">
+          <a id="pricing__js" href="#">Photography</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__socials-div">
+      <ul>
+        <li class="header__socials hide__mobile social1">
+          <a href="https://www.instagram.com/alpency/">
+            <svg
+              class="icons icon1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
             >
-          </h1>
-        </div>
-        <div class="header__nav-div">
-          <ul>
-            <li class="header__nav-li header__list1" id="nav1">
-              <a href="/portfolio/">Portfolio</a>
-            </li>
-            <li class="header__nav-li header__list2">
-              <a id="test" href="#">Services</a>
-            </li>
-            <li class="header__nav-li header__list3">
-              <a href="#">Guide & Info</a>
-            </li>
-            <li class="header__nav-li header__list4">
-              <a id="pricing__js" href="#">Photography</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__socials-div">
-          <ul>
-            <li class="header__socials social1">
-              <div id="langButton" onclick="toggleLanguage()">English</div>
-            </li>
-            <li class="header__socials social2">
-              <a href="mailto:alpencyprus@gmail.com">
-                <svg
-                  class="icons icon2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li class="header__socials social3">
-              <a
-                href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLCgoNGD0YkuuLCgqLQYAMb0Ftw&q=cyprus&rlz=1C5CHFA_enCY1043CY1043&oq=cyprus&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxiDARixAxiABBiKBTIGCAAQRRg8MgYIARBFGDsyEggCEC4YQxiDARixAxiABBiKBTIGCAMQRRg7MgYIBBAjGCcyDAgFEAAYQxiABBiKBTIGCAYQRRg8MgYIBxBFGD3SAQgyMDUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
-              >
-                <img
-                  class="cyprus icons"
-                  src={Cyprus.src}
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+              <path
+                d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+              ></path>
+              <circle cx="11.994" cy="11.979" r="3.003"></circle>
+            </svg>
+          </a>
+        </li>
+        <li class="header__socials hide__mobile social2">
+          <a href="mailto:alpencyprus@gmail.com">
+            <svg
+              class="icons icon2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li class="header__socials hide__mobile social3">
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLCgoNGD0YkuuLCgqLQYAMb0Ftw&q=cyprus&rlz=1C5CHFA_enCY1043CY1043&oq=cyprus&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxiDARixAxiABBiKBTIGCAAQRRg8MgYIARBFGDsyEggCEC4YQxiDARixAxiABBiKBTIGCAMQRRg7MgYIBBAjGCcyDAgFEAAYQxiABBiKBTIGCAYQRRg8MgYIBxBFGD3SAQgyMDUxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+          >
+            <img class="cyprus icons" src={Cyprus.src} />
+          </a>
+        </li>
+        <li onclick="showSidebar()" class="header__menu-bar">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 96 960 960"
+              width="48"
+              ><path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              ></path></svg
+            ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header__main-div sidebar">
+    <div class="header__nav-div sidebar__nav-div">
+      <ul>
+        <li onclick="hideSidebar()" class="header__closing">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="80"
+              viewBox="0 96 960 960"
+              width="80"
+              ><path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              ></path></svg
+            >
+          </a>
+        </li>
+        <li class="header__nav-li header__list1" id="nav1">
+          <a href="/portfolio/">Portfolio</a>
+        </li>
+        <li class="header__nav-li header__list2">
+          <a id="test" href="#">Services</a>
+        </li>
+        <li class="header__nav-li header__list3">
+          <a href="#">Guide & Info</a>
+        </li>
+        <li class="header__nav-li header__list4">
+          <a id="pricing__js" href="#">Photography</a>
+        </li>
+        <li class="header__nav-li header__list5">
+          <a href="https://www.instagram.com/alpency/">Instagram</a>
+        </li>
+        <li class="header__nav-li header__list6">
+          <a href="mailto:alpencyprus@gmail.com">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+
+<style>
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 999;
+    padding: 0;
+    backdrop-filter: blur(20px);
+    background-color: #dfb553a4;
+  }
+
+  .sidebar__nav-div li {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .sidebar__nav-div ul {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__menu-bar svg {
+    fill: white;
+    display: none;
+  }
+
+  .header__closing svg {
+    fill: white;
+  }
+
+  @media (max-width: 900px) {
+    .hide__mobile {
+      display: none;
+    }
+
+    .header__menu-bar svg {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .header__main-div {
+      height: 7vh;
+      padding: 0 1rem;
+    }
+
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.querySelector(".sidebar");
+    if (!sidebar) {
+      console.error("Sidebar element not found!");
+      return;
+    }
+
+    window.showSidebar = function () {
+      sidebar.style.display = "flex";
+    };
+
+    window.hideSidebar = function () {
+      sidebar.style.display = "none";
+    };
+  });
+</script>

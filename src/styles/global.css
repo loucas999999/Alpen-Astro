@@ -334,6 +334,22 @@ footer ul li:hover {
 
 /* <=============== END OF FOOTER ===============> */
 
+/* MEDIA QUERIES FOR HOME PAGE  */
+
+@media (max-width: 1200px) {
+  .header__nav-div ul {
+    font-size: large;
+  }
+
+  img {
+    height: 2.5rem;
+  }
+
+  .extra__main-heading {
+    font-size: large;
+  }
+}
+
 /* <================ Footer Media Queries ==================> */
 
 @media (max-width: 900px) {
@@ -367,17 +383,17 @@ footer ul li:hover {
   }
 
   .footer__arrow svg {
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
   }
 
   .footer__arrow.active svg {
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
   }
 
   .list-show {
-    display: none; 
+    display: none;
   }
   .list-show.active {
-    display: block; 
+    display: block;
   }
 }

@@ -10,338 +10,422 @@ import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-  <MainHead title="Alpen - Home"></MainHead>
-    <style>
-      /* <============FIRST SECTION OF WEBSITE ===============> */
-      .first__section {
-        background-image: url(../assets/pexels-pixabay-256643.jpg);
-        background-size: 180%;
-        height: 100vh;
-      }
+  <MainHead title="Alpen - Home" />
+  <style>
+
+    /* <============FIRST SECTION OF WEBSITE ===============> */
+    .first__section {
+      background-image: url(../assets/pexels-pixabay-256643.jpg);
+      background-size: 180%;
+    }
+
+    .container {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 2.5rem;
+    }
+
+    .container__heading {
+      display: block;
+      font-size: 6rem;
+      width: 22ch;
+      line-height: 1;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      filter: drop-shadow(1px 1px 20px #000000);
+    }
+
+    .extra__main-heading {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      filter: drop-shadow(1px 1px 20px #000000);
+    }
+
+    .strong__text1 {
+      color: #f3e5ab;
+    }
+
+    .container__paragraph {
+      font-size: 3rem;
+      font-family: "Great Vibes", cursive;
+      text-align: center;
+      padding-bottom: 1rem;
+      color: white;
+      filter: drop-shadow(0px 0px 6px #000000);
+    }
+
+    .container__btn {
+      font-family: "Roboto", sans-serif;
+      font-size: larger;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      color: black;
+      background-color: #f6f9fc;
+      transition: 1s ease;
+    }
+
+    .container__btn:hover {
+      scale: 1.05;
+    }
+
+    @media (max-width: 630px) {
 
       .container {
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 2.5rem;
+        height: 60vh;
       }
 
-      .container__heading {
-        display: block;
-        font-size: 6rem;
-        width: 22ch;
-        line-height: 1;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        filter: drop-shadow(1px 1px 20px #000000);
-      }
-
-      .extra__main-heading {
-        color: white;
-        font-family: "Roboto", sans-serif;
-        filter: drop-shadow(1px 1px 20px #000000);
-      }
-
-      .strong__text1 {
-        color: #f3e5ab;
-      }
-
-      .container__paragraph {
-        font-size: 3rem;
-        font-family: "Great Vibes", cursive;
-        text-align: center;
-        padding-bottom: 1rem;
-        color: white;
-        filter: drop-shadow(0px 0px 6px #000000);
+      .centering-div {
       }
 
       .container__btn {
-        font-family: "Roboto", sans-serif;
-        font-size: larger;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        padding: 1rem 2rem;
-        font-weight: 700;
-        color: black;
-        background-color: #f6f9fc;
-        transition: 1s ease;
+        padding: 0.5rem 1rem;
       }
 
-      .container__btn:hover {
-        scale: 1.05;
+    }
+
+    @media (max-width: 550px) {
+      .container {
+        padding: 0 10rem;
       }
+    }
 
-      /* SECOND SECTION */
+    /* SECOND SECTION */
 
-      .second-section {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.7945553221288515) 100% rgba(158, 158, 158, 1) 50%,
-          rgba(255, 255, 255, 1) 0%
-        );
-        height: 220vh;
-      }
+    .height-of-text {
+      width: 49%;
+      padding-top: 10rem;
+      display: flex;
+      justify-content: right;
+      align-items: end;
+    }
 
+    .text-top-right {
+      font-family: "Roboto", sans-serif;
+      width: 55ch;
+      font-size: 1.2rem;
+    }
+
+    .p2 {
+      color: #86868b;
+      font-weight: 500;
+    }
+
+    .p1 {
+      color: #daa520;
+      font-weight: 900;
+    }
+
+    strong {
+      color: grey;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding-top: 5rem;
+    }
+
+    .boxes {
+      font-family: "Roboto", sans-serif;
+      width: 600px;
+      background-color: white;
+      padding: 6px 6px 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+      transition: 0.5s ease;
+    }
+
+    .box1:hover,
+    .box2:hover,
+    .box3:hover,
+    .box4:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
+    }
+
+    .extra-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180vh;
+    }
+
+    .grey-box-inside {
+      height: 400px;
+      width: 100%;
+      background-color: #f5f5f5;
+      border-radius: 0.5rem;
+    }
+
+    .greybox1 {
+      background-image: url(../assets/Communication.webp);
+      background-size: cover;
+    }
+
+    .greybox2 {
+      background-image: url(../assets/Coding.webp);
+      background-size: cover;
+      background-position: 25%;
+    }
+
+    .greybox3 {
+      background-image: url(../assets/SEO.webp);
+      background-size: cover;
+      background-position: 50%;
+    }
+    .greybox4 {
+      background-image: url(../assets/cameras.webp);
+      background-size: cover;
+      background-position: 50%;
+    }
+
+    .box1,
+    .box3 {
+      margin-bottom: 3rem;
+    }
+
+    .smaller-grey-box-inside {
+      margin: 0.5rem 0;
+      height: 50px;
+      width: fit-content;
+      background-color: #f5f5f5;
+      border-radius: 0.5rem;
+      display: flex;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .under__grey-box {
+      padding: 20px;
+    }
+
+    .icons__inside-boxes {
+      fill: black;
+      display: inline-block;
+    }
+
+    .text__next-to-div {
+      font-weight: 500;
+    }
+
+    @media (max-width: 630px) {
       .height-of-text {
-        width: 49%;
-        height: 30vh;
-        display: flex;
-        justify-content: right;
-        align-items: end;
-      }
+      padding-top: 5rem;
+    }
+    }
 
-      .text-top-right {
-        font-family: "Roboto", sans-serif;
-        width: 55ch;
-        font-size: 1.2rem;
-      }
+    /* <================ FURTHER INFO SECTION ====================> */
 
-      .p2 {
-        color: #86868b;
-        font-weight: 500;
-      }
+    .further__info-main-div {
+      background-color: #dfb553;
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      font-family: "Roboto", sans-serif;
+      margin: 3rem 0rem;
+      margin-bottom: 5rem;
+    }
 
-      .p1 {
-        color: #daa520;
-        font-weight: 900;
-      }
+    .further__info-heading1 {
+      color: white;
+    }
 
-      strong {
-        color: grey;
-      }
+    .further__info-h1 {
+      font-size: 3rem;
+      color: #333333;
+      line-height: 1;
+    }
 
-      .main {
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        padding-top: 5rem;
-      }
+    .further__info-btn {
+      border: none;
+      background-color: #f6f9fc;
+      color: black;
+      font-weight: 700;
+      margin-top: 1rem;
+      padding: 0.5rem 2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
 
-      .boxes {
-        font-family: "Roboto", sans-serif;
-        height: 750px;
-        width: 600px;
-        background-color: white;
-        padding: 6px;
-        border-radius: 0.5rem;
-        box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 1px 12px 42px -20px rgba(0, 0, 0, 0.75);
-      }
+    .further__info-right {
+      position: relative;
+      height: 100%;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
 
-      .box1,
-      .box2,
-      .box3,
-      .box4 {
-        transition: 0.5s ease;
-      }
+    .further__info-left {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
 
-      .box1:hover,
-      .box2:hover,
-      .box3:hover,
-      .box4:hover {
-        transform: scale(1.02);
-        box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 1px 12px 42px -3px rgba(0, 0, 0, 0.75);
-      }
+    .testing-image {
+      height: 100%;
+      z-index: 10;
+    }
 
-      .extra-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 180vh;
-      }
+    .avatar__shadow {
+      width: 400px;
+      height: 300px;
+      background-color: #dccca6;
+      border-radius: 50%;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      filter: blur(45px);
+    }
 
-      .grey-box-inside {
-        height: 400px;
-        width: 100%;
-        background-color: #f5f5f5;
-        border-radius: 0.5rem;
-      }
+    /* <================= PHOTOGRAPHY SECTION =================> */
 
-      .greybox1 {
-        background-image: url(../assets/Communication.webp);
-        background-size: cover;
-      }
+    .photography__main-div {
+      height: 60vh;
+      width: 95%;
+      margin: 0 auto;
+      background-image: url(../assets/pexels-abhishek-saini-1415858-2929412.jpg);
+      border-radius: 0.5rem;
+      background-size: 130%;
+      background-position: 0% 60%;
+      margin-bottom: 5rem;
+    }
 
-      .greybox2 {
-        background-image: url(../assets/Coding.webp);
-        background-size: cover;
-        background-position: 25%;
-      }
+    .photography__left-div {
+      width: 30%;
+      padding: 2rem;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: larger;
+    }
 
-      .greybox3 {
-        background-image: url(../assets/SEO.webp);
-        background-size: cover;
-        background-position: 50%;
-      }
-      .greybox4 {
-        background-image: url(../assets/cameras.webp);
-        background-size: cover;
-        background-position: 50%;
-      }
+    .photography__btn {
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 0.5rem;
+      margin-top: 3rem;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+    }
 
-      .box1,
-      .box3 {
-        margin-bottom: 3rem;
-      }
+    /* JAVASCRIPT FADE IN ANIMATION  */
 
-      .smaller-grey-box-inside {
-        margin: 0.5rem 0;
-        height: 50px;
-        width: fit-content;
-        background-color: #f5f5f5;
-        border-radius: 0.5rem;
-        display: flex;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        align-items: center;
-        gap: 0.3rem;
-      }
+    .hidden {
+      opacity: 0;
+      transition: all 1s ease;
+      transform: translateY(15px);
+    }
 
-      .under__grey-box {
-        padding: 20px;
-      }
+    .lefting {
+      transition: all 1s ease;
+      transform: translateX(-90%);
+    }
 
-      .icons__inside-boxes {
-        fill: black;
-        display: inline-block;
-      }
+    .fade__In {
+      transition: all 3s ease-in;
+      opacity: 0;
+    }
 
-      .text__next-to-div {
-        font-weight: 500;
-      }
+    .show {
+      opacity: 1;
+      transform: translateY(0px);
+      transform: translateX(0px);
+    }
 
-      /* <================ FURTHER INFO SECTION ====================> */
-
+    /* MEDIA QUERIES FOR HOME PAGE  */
+    @media (max-width: 1350px) {
       .further__info-main-div {
-        background-color: #DFB553;
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        margin: 3rem 0rem;
-        margin-bottom: 5rem;
-      }
-
-      .further__info-heading1 {
-        color: white;
-      }
-
-      .further__info-h1 {
-        font-size: 3rem;
-        color: #333333;
-        line-height: 1;
-      }
-
-      .further__info-btn {
-        border: none;
-        background-color: #f6f9fc;
-        color: black;
-        font-weight: 700;
-        margin-top: 1rem;
-        padding: 0.5rem 2rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-      }
-
-      .further__info-right {
-        position: relative;
-        height: 100%;
-        width: 40%;
-        display: flex;
-        justify-content: center;
-      }
-
-      .further__info-left {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+        zoom: 0.9;
       }
 
       .testing-image {
-        height: 100%;
-        z-index: 10;
+        height: 100%x 
       }
 
       .avatar__shadow {
-        width: 400px;
-        height: 300px;
-        background-color: #DCCCA6;
-        border-radius: 50%;
-        position: absolute;
-        top: 3rem;
-        left: 0;
-        right: 0;
-        margin-inline: auto;
-        filter: blur(45px);
+        width: 350px;
+        height: 200px;
+        top: 4rem;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .container__heading {
+        font-size: 4.5rem;
       }
 
-      /* <================= PHOTOGRAPHY SECTION =================> */
-
-      .photography__main-div {
-        height: 60vh;
-        width: 95%;
-        margin: 0 auto;
-        background-image: url(../assets/pexels-abhishek-saini-1415858-2929412.jpg);
-        border-radius: 0.5rem;
-        background-size: 130%;
-        background-position: 0% 60%;
-        margin-bottom: 5rem;
+      .container__paragraph {
+        font-size: 2.5rem;
       }
 
-      .photography__left-div {
-        width: 30%;
-        padding: 2rem;
-        color: white;
-        font-family: "Roboto", sans-serif;
-        font-size: larger;
+      .container__btn {
+        font-size: medium;
       }
 
-      .photography__btn {
-        background-color: white;
-        color: black;
-        border: none;
-        border-radius: 0.5rem;
-        margin-top: 3rem;
-        padding: 0.5rem 2rem;
-        cursor: pointer;
+      /* SECOND SECTION */
+      .second-section {
+        zoom: 0.8;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .container__heading {
+        font-size: 4rem;
       }
 
-      /* JAVASCRIPT FADE IN ANIMATION  */
-
-      .hidden {
-        opacity: 0;
-        transition: all 1s ease;
-        transform: translateY(15px);
+      .container__paragraph {
+        font-size: 2rem;
       }
 
-      .lefting {
-        transition: all 1s ease;
-        transform: translateX(-90%);
+      .first__section {
+        background-size: 220%;
       }
 
-      .fade__In {
-        transition: all 3s ease-in;
-        opacity: 0;
+      .second-section {
+        zoom: 0.65;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .container__heading {
+        font-size: 3rem;
       }
 
-      .show {
-        opacity: 1;
-        transform: translateY(0px);
-        transform: translateX(0px);
+      .container__paragraph {
+        font-size: 2rem;
       }
-    </style>
+
+      .first__section {
+        background-size: 220%;
+      }
+    }
+  </style>
 
   <body>
     <section class="first__section">
@@ -698,7 +782,6 @@ import Header from "../components/Header.astro";
     </section>
     <Footer />
     <script>
-      
       // Scroll In Animations
 
       const observer = new IntersectionObserver((entries) => {
