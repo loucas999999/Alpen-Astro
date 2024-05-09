@@ -395,16 +395,102 @@ import Header from "../components/Header.astro";
         padding: 0.5rem 1rem;
       }
 
-      .extra__main-heading {
-        font-size: 1rem;
+      .container__heading {
+        font-size: 2.5rem;
       }
 
-      .container__heading {
-        font-size: 1rem;
+      .container__paragraph {
+        font-size: 1.5rem;
       }
     }
-    
+
+    @media (max-width: 500px) {
+      .container__heading {
+        width: 15ch;
+        font-size: 3rem;
+      }
+
+      .first__section {
+        background-size: 265%;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .container__heading {
+        width: 15ch;
+        font-size: 2.5rem;
+      }
+
+      .first__section {
+        background-size: 270%;
+      }
+    }
     /* END OF MEDIA QUERIES FIRST SECTION */
+
+    /* MEDIA QUERIES SECOND SECTION */
+    @media (max-width: 1300px) {
+      .second-section {
+        zoom: 0.8;
+      }
+    }
+
+    @media (max-width: 1050px) {
+      .second-section {
+        zoom: 0.7;
+      }
+    }
+
+    @media (max-width: 899px) {
+      .main {
+        display: block;
+      }
+
+      .second-section {
+        zoom: 1;
+      }
+
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .extra-left {
+        height: 160vh;
+      }
+
+      .height-of-text {
+        width: 100%;
+        padding: 5rem 0 0 5rem;
+        justify-content: left;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .second-section {
+        zoom: 0.9;
+      }
+
+      .height-of-text {
+        padding-left: 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .second-section {
+        zoom: 0.8;
+      }
+
+      .height-of-text {
+        padding: 5rem 2rem 2rem 2rem;
+      }
+
+      .main {
+        zoom: 0.8;
+      }
+      
+    }
+
 
   </style>
 
