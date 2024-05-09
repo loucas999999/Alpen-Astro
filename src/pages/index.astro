@@ -278,7 +278,7 @@ import Header from "../components/Header.astro";
     /* <================= PHOTOGRAPHY SECTION =================> */
 
     .photography__main-div {
-      height: 60vh;
+      height: 70vh;
       width: 95%;
       margin: 0 auto;
       background-image: url(../assets/pexels-abhishek-saini-1415858-2929412.jpg);
@@ -610,7 +610,60 @@ import Header from "../components/Header.astro";
         width: 150px;
       }
     }
+
+    /* PHOTOGRAPHY SECTION  */
+    @media (max-width: 1300px) {
+      .photography__left-div {
+      width: 40%;
+      padding: 2rem;
+      font-size: larger;
+    }
+    }
+
+    @media (max-width: 970px) {
+      .photography__left-div {
+        width: 80%;
+      }
+
+      .photo__longer-width-text {
+        width: 80%;
+      }
+
+      .photo__shorter-width-text {
+        width: 40%;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .photography__main-div {
+        height: 50vh;
+      }
+
+      .photography__left-div {
+        font-size: 0.9rem
+      }
+
+      .photo__shorter-width-text {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .photography__main-div {
+        height: 40vh;
+      }
+
+      .photography__left-div {
+        padding: 1rem;
+      }
+
+      .photo__longer-width-text {
+        width: 100%;
+      }
+    }
+
   </style>
+
 
   <body>
     <section class="first__section">
@@ -800,18 +853,18 @@ import Header from "../components/Header.astro";
       <div class="photography__main-div">
         <div class="photography__left-div">
           <h2 class="fade__In">About Our Photography</h2>
-          <p class="fade__In">
-            Our photography services capture the essence of your brand with
-            high-quality visuals. Using a Sony A7iii camera body and a Viltrox
-            75mm lens, we produce crisp, vibrant images that enhance your
-            website, marketing materials, or social media.
-            <br /><br />
-            <p class="fade__In">
+            <p class="fade__In photo__longer-width-text">
+              Our photography services capture the essence of your brand with
+              high-quality visuals. Using a Sony A7iii camera body and a Viltrox
+              75mm lens, we produce crisp, vibrant images that enhance your
+              website, marketing materials, or social media.
+              <br /><br />
+            </p>
+            <p class="fade__In photo__shorter-width-text">
               Whether showcasing products, capturing interiors, or covering
               events, our photography brings a compelling visual dimension to
               your brand, increasing its appeal and engagement.
             </p>
-          </p>
           <a href="/guide/#photography"
             ><button class="photography__btn fade__In">Learn More</button></a
           >
