@@ -12,7 +12,6 @@ import Header from "../components/Header.astro";
 <html lang="en">
   <MainHead title="Alpen - Home" />
   <style>
-
     /* <============FIRST SECTION OF WEBSITE ===============> */
     .first__section {
       background-image: url(../assets/pexels-pixabay-256643.jpg);
@@ -72,27 +71,6 @@ import Header from "../components/Header.astro";
 
     .container__btn:hover {
       scale: 1.05;
-    }
-
-    @media (max-width: 630px) {
-
-      .container {
-        height: 60vh;
-      }
-
-      .centering-div {
-      }
-
-      .container__btn {
-        padding: 0.5rem 1rem;
-      }
-
-    }
-
-    @media (max-width: 550px) {
-      .container {
-        padding: 0 10rem;
-      }
     }
 
     /* SECOND SECTION */
@@ -227,12 +205,6 @@ import Header from "../components/Header.astro";
       font-weight: 500;
     }
 
-    @media (max-width: 630px) {
-      .height-of-text {
-      padding-top: 5rem;
-    }
-    }
-
     /* <================ FURTHER INFO SECTION ====================> */
 
     .further__info-main-div {
@@ -358,22 +330,7 @@ import Header from "../components/Header.astro";
       transform: translateX(0px);
     }
 
-    /* MEDIA QUERIES FOR HOME PAGE  */
-    @media (max-width: 1350px) {
-      .further__info-main-div {
-        zoom: 0.9;
-      }
-
-      .testing-image {
-        height: 100%x 
-      }
-
-      .avatar__shadow {
-        width: 350px;
-        height: 200px;
-        top: 4rem;
-      }
-    }
+    /* MEDIA QUERIES FIRST SECTION */
 
     @media (max-width: 1200px) {
       .container__heading {
@@ -386,11 +343,6 @@ import Header from "../components/Header.astro";
 
       .container__btn {
         font-size: medium;
-      }
-
-      /* SECOND SECTION */
-      .second-section {
-        zoom: 0.8;
       }
     }
 
@@ -406,10 +358,6 @@ import Header from "../components/Header.astro";
       .first__section {
         background-size: 220%;
       }
-
-      .second-section {
-        zoom: 0.65;
-      }
     }
 
     @media (max-width: 750px) {
@@ -421,10 +369,43 @@ import Header from "../components/Header.astro";
         font-size: 2rem;
       }
 
+      .extra__main-heading {
+        font-size: 1rem;
+      }
+
+      .container__btn {
+        font-size: 0.8rem;
+      }
+
       .first__section {
         background-size: 220%;
       }
+
+      .container {
+        height: 70vh;
+      }
     }
+
+    @media (max-width: 630px) {
+      .container {
+        height: 60vh;
+      }
+
+      .container__btn {
+        padding: 0.5rem 1rem;
+      }
+
+      .extra__main-heading {
+        font-size: 1rem;
+      }
+
+      .container__heading {
+        font-size: 1rem;
+      }
+    }
+    
+    /* END OF MEDIA QUERIES FIRST SECTION */
+
   </style>
 
   <body>

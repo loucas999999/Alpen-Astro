@@ -48,7 +48,6 @@ h6 {
 /* CSS RESETS END  */
 
 /* HEADER SECTION */
-
 img {
   height: 3rem;
   width: auto;
@@ -139,14 +138,6 @@ svg {
 .centering__div a {
   text-decoration: none;
 }
-
-#langButton {
-  color: white;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-
 /* END OF HEADER */
 
 /* <================= FAQS SECTION =================> */
@@ -249,11 +240,11 @@ svg {
   max-height: 120px;
   animation: fadeInText 1s ease-in-out;
 }
-
 /* END OF FAQ SECTION */
 
-/* FOOTER SECTION  */
 
+
+/* FOOTER SECTION  */
 footer {
   font-family: "Roboto", sans-serif;
   background-color: #dfb553;
@@ -331,27 +322,9 @@ footer ul li:hover {
 .footer__arrow svg {
   display: none;
 }
-
 /* <=============== END OF FOOTER ===============> */
 
-/* MEDIA QUERIES FOR HOME PAGE  */
-
-@media (max-width: 1200px) {
-  .header__nav-div ul {
-    font-size: large;
-  }
-
-  img {
-    height: 2.5rem;
-  }
-
-  .extra__main-heading {
-    font-size: large;
-  }
-}
-
 /* <================ Footer Media Queries ==================> */
-
 @media (max-width: 900px) {
   .second__footer {
     max-width: 700px;

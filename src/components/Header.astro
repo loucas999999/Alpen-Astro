@@ -130,7 +130,7 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
     top: 0;
     right: 0;
     height: 100%;
-    width: 300px;
+    width: 100%;
     z-index: 999;
     padding: 0;
     backdrop-filter: blur(20px);
@@ -158,6 +158,17 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
     fill: white;
   }
 
+  @media (max-width: 1200px) {
+      .header__nav-div ul {
+        font-size: large;
+        gap: 1rem;
+      }
+
+      .header__main-div {
+        padding: 0 0.5rem;
+      }
+    }
+
   @media (max-width: 900px) {
     .hide__mobile {
       display: none;
@@ -174,6 +185,25 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
       padding: 0 1rem;
     }
 
+    .sidebar {
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .header__main-div {
+      height: 6vh;
+      padding: 0 0.5rem;
+    }
+
+    .h1 img {
+      height: 2rem;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 100%;
+    }
   }
 </style>
 
