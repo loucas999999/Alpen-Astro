@@ -87,8 +87,7 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
   <div class="header__main-div sidebar">
     <div class="header__nav-div sidebar__nav-div">
       <ul>
-        <li onclick="hideSidebar()" class="header__closing">
-          <a href="#">
+        <div onclick="hideSidebar()" class="header__closing">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="80"
@@ -98,8 +97,7 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
                 d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
               ></path></svg
             >
-          </a>
-        </li>
+        </div>
         <li class="header__nav-li header__list1" id="nav1">
           <a href="/portfolio/">Portfolio</a>
         </li>
@@ -156,6 +154,7 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
 
   .header__closing svg {
     fill: white;
+    cursor: pointer;
   }
 
   @media (max-width: 1200px) {
@@ -176,6 +175,10 @@ import close from "../assets/close_FILL0_wght400_GRAD0_opsz48.svg";
 
     .header__menu-bar svg {
       display: flex;
+    }
+
+    .header__nav-div ul {
+      align-items: start;
     }
   }
 
