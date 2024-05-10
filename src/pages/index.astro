@@ -277,7 +277,7 @@ import Header from "../components/Header.astro";
 
     /* <================= PHOTOGRAPHY SECTION =================> */
 
-    .photography__main-div {
+    /* .photography__main-div {
       height: 70vh;
       width: 95%;
       margin: 0 auto;
@@ -304,7 +304,7 @@ import Header from "../components/Header.astro";
       margin-top: 3rem;
       padding: 0.5rem 2rem;
       cursor: pointer;
-    }
+    } */
 
     /* JAVASCRIPT FADE IN ANIMATION  */
 
@@ -612,7 +612,7 @@ import Header from "../components/Header.astro";
     }
 
     /* PHOTOGRAPHY SECTION  */
-    @media (max-width: 1300px) {
+    /* @media (max-width: 1300px) {
       .photography__left-div {
       width: 40%;
       padding: 2rem;
@@ -655,10 +655,69 @@ import Header from "../components/Header.astro";
 
       .photography__left-div {
         padding: 1rem;
+        font-size: 0.8rem
       }
 
       .photo__longer-width-text {
         width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+    } */
+    @media (max-width: 1430px) {
+      .section__faq__left-div {
+        padding: 0 3rem;
+        width: 45%;
+      }
+
+      .section__faq__right-div {
+        padding-right: 2rem;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .section__faq__right-div {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .section__faq {
+        display: block;
+        padding-top: 0;
+      }
+
+      .section__faq__right-div {
+        width: 100%;
+        padding: 0 3rem;
+      }
+      
+      .section__faq__left-div {
+        width: 90%;
+        padding: 0 3rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .section__faq__left-div {
+        width: 95%;
+        padding: 0 1rem;
+      }
+
+      .section__faq__right-div {
+        padding: 0 1rem;
+      }
+
+      .question h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .question h3 {
+        font-size: 1.2rem;
       }
     }
 
@@ -849,7 +908,7 @@ import Header from "../components/Header.astro";
       </div>
     </section>
 
-    <section class="photography__section">
+    <!-- <section class="photography__section">
       <div class="photography__main-div">
         <div class="photography__left-div">
           <h2 class="fade__In">About Our Photography</h2>
@@ -871,7 +930,7 @@ import Header from "../components/Header.astro";
         </div>
         <div class="photography__right-div"></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- THIRD SECTION, FAQ -->
     <section class="section__faq">
@@ -1018,7 +1077,9 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
+
     <Footer />
+
     <script>
       // Scroll In Animations
 
