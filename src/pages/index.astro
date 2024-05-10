@@ -12,7 +12,9 @@ import Header from "../components/Header.astro";
 <html lang="en">
   <MainHead title="Alpen - Home" />
   <style>
+    
     /* <============FIRST SECTION OF WEBSITE ===============> */
+
     .first__section {
       background-image: url(../assets/pexels-pixabay-256643.jpg);
       background-size: 180%;
@@ -274,37 +276,6 @@ import Header from "../components/Header.astro";
       margin-inline: auto;
       filter: blur(45px);
     }
-
-    /* <================= PHOTOGRAPHY SECTION =================> */
-
-    /* .photography__main-div {
-      height: 70vh;
-      width: 95%;
-      margin: 0 auto;
-      background-image: url(../assets/pexels-abhishek-saini-1415858-2929412.jpg);
-      border-radius: 0.5rem;
-      background-size: 130%;
-      background-position: 0% 60%;
-      margin-bottom: 5rem;
-    }
-
-    .photography__left-div {
-      width: 30%;
-      padding: 2rem;
-      color: white;
-      font-family: "Roboto", sans-serif;
-      font-size: larger;
-    }
-
-    .photography__btn {
-      background-color: white;
-      color: black;
-      border: none;
-      border-radius: 0.5rem;
-      margin-top: 3rem;
-      padding: 0.5rem 2rem;
-      cursor: pointer;
-    } */
 
     /* JAVASCRIPT FADE IN ANIMATION  */
 
@@ -611,61 +582,8 @@ import Header from "../components/Header.astro";
       }
     }
 
-    /* PHOTOGRAPHY SECTION  */
-    /* @media (max-width: 1300px) {
-      .photography__left-div {
-      width: 40%;
-      padding: 2rem;
-      font-size: larger;
-    }
-    }
+    /* MEDIA QUERIES FOR FAQ  */
 
-    @media (max-width: 970px) {
-      .photography__left-div {
-        width: 80%;
-      }
-
-      .photo__longer-width-text {
-        width: 80%;
-      }
-
-      .photo__shorter-width-text {
-        width: 40%;
-      }
-    }
-
-    @media (max-width: 780px) {
-      .photography__main-div {
-        height: 50vh;
-      }
-
-      .photography__left-div {
-        font-size: 0.9rem
-      }
-
-      .photo__shorter-width-text {
-        width: 50%;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .photography__main-div {
-        height: 40vh;
-      }
-
-      .photography__left-div {
-        padding: 1rem;
-        font-size: 0.8rem
-      }
-
-      .photo__longer-width-text {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 500px) {
-
-    } */
     @media (max-width: 1430px) {
       .section__faq__left-div {
         padding: 0 3rem;
@@ -693,7 +611,7 @@ import Header from "../components/Header.astro";
         width: 100%;
         padding: 0 3rem;
       }
-      
+
       .section__faq__left-div {
         width: 90%;
         padding: 0 3rem;
@@ -720,9 +638,7 @@ import Header from "../components/Header.astro";
         font-size: 1.2rem;
       }
     }
-
   </style>
-
 
   <body>
     <section class="first__section">
@@ -907,30 +823,6 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
-
-    <!-- <section class="photography__section">
-      <div class="photography__main-div">
-        <div class="photography__left-div">
-          <h2 class="fade__In">About Our Photography</h2>
-            <p class="fade__In photo__longer-width-text">
-              Our photography services capture the essence of your brand with
-              high-quality visuals. Using a Sony A7iii camera body and a Viltrox
-              75mm lens, we produce crisp, vibrant images that enhance your
-              website, marketing materials, or social media.
-              <br /><br />
-            </p>
-            <p class="fade__In photo__shorter-width-text">
-              Whether showcasing products, capturing interiors, or covering
-              events, our photography brings a compelling visual dimension to
-              your brand, increasing its appeal and engagement.
-            </p>
-          <a href="/guide/#photography"
-            ><button class="photography__btn fade__In">Learn More</button></a
-          >
-        </div>
-        <div class="photography__right-div"></div>
-      </div>
-    </section> -->
 
     <!-- THIRD SECTION, FAQ -->
     <section class="section__faq">
