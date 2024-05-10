@@ -500,12 +500,17 @@ import Header from "../components/Header.astro";
     }
 
     @media (max-width: 650px) {
+      .h2-ss {
+        line-height: 1;
+        padding: 0.5rem 0;
+      }
+
       .boxes {
         width: 400px;
       }
 
       .grey-box-inside {
-        height: 300px;
+        height: 200px;
       }
 
       .under__grey-box {
@@ -528,8 +533,12 @@ import Header from "../components/Header.astro";
     }
 
     @media (max-width: 420px) {
+      .height-of-text {
+        padding: 5rem 1rem 2rem 1rem;
+      }
+
       .boxes {
-        width: 320px;
+        width: 340px;
       }
 
       .right-side {
@@ -610,8 +619,14 @@ import Header from "../components/Header.astro";
         display: block;
       }
 
+      .further__info-section {
+        display: flex;
+        align-items: center;
+      }
+
       .further__info-main-div {
-        padding-top: 2rem;
+        display: flex;
+        align-items: center;
       }
 
       .further__info-h1 {
@@ -630,89 +645,117 @@ import Header from "../components/Header.astro";
       }
 
       .further__info-left {
-        justify-content: start;
+        justify-content: center;
+      }
+
+      @media (max-width: 630px) {
+        .further__info-h1 {
+          padding: 0 1rem;
+        }
+
+        .testing-image {
+          height: 40%;
+        }
+
+        .further__info-left {
+          height: 28vh;
+        }
+
+        .further__info-h1 {
+          font-size: 2rem;
+        }
+
+        .avatar__shadow {
+          height: 150px;
+          width: 150px;
+        }
+      }
+
+      /* MEDIA QUERIES FOR FAQ  */
+
+      @media (max-width: 1430px) {
+        .section__faq__left-div {
+          padding: 0 3rem;
+          width: 45%;
+        }
+
+        .section__faq__right-div {
+          padding-right: 2rem;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .section__faq__right-div {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .section__faq {
+          display: block;
+          padding-top: 0;
+        }
+
+        .section__faq__right-div {
+          width: 100%;
+          padding: 0 3rem;
+        }
+
+        .section__faq__left-div {
+          width: 90%;
+          padding: 0 3rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .section__faq__left-div {
+          width: 95%;
+          padding: 0 1rem;
+        }
+
+        .section__faq__right-div {
+          padding: 0 1rem;
+        }
+
+        .question h3 {
+          font-size: 1.5rem;
+        }
+
+        .answer p {
+          font-size: 1rem;
+        }
+
+        .title {
+          line-height: 1;
+        }
+
+        .faq1.faq.active .answer {
+          max-height: 230px;
+        }
+
+        .faq2.faq.active .answer {
+          max-height: 220px;
+        }
+
+        .faq3.faq.active .answer {
+          max-height: 220px;
+        }
+
+        .faq4.faq.active .answer {
+          max-height: 335px;
+        }
+
+        .faq5.faq.active .answer {
+          max-height: 170px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .question h3 {
+          font-size: 1.2rem;
+        }
+      }
     }
-
-    @media (max-width: 630px) {
-      .further__info-h1 {
-        padding: 0 1rem;
-      }
-
-      .testing-image {
-        height: 40%;
-      }
-
-      .further__info-left {
-        height: 28vh;
-      }
-
-      .further__info-h1 {
-        font-size: 2rem;
-      }
-
-      .avatar__shadow {
-        height: 150px;
-        width: 150px;
-      }
-    }
-
-    /* MEDIA QUERIES FOR FAQ  */
-
-    @media (max-width: 1430px) {
-      .section__faq__left-div {
-        padding: 0 3rem;
-        width: 45%;
-      }
-
-      .section__faq__right-div {
-        padding-right: 2rem;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .section__faq__right-div {
-        width: 50%;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .section__faq {
-        display: block;
-        padding-top: 0;
-      }
-
-      .section__faq__right-div {
-        width: 100%;
-        padding: 0 3rem;
-      }
-
-      .section__faq__left-div {
-        width: 90%;
-        padding: 0 3rem;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .section__faq__left-div {
-        width: 95%;
-        padding: 0 1rem;
-      }
-
-      .section__faq__right-div {
-        padding: 0 1rem;
-      }
-
-      .question h3 {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (max-width: 400px) {
-      .question h3 {
-        font-size: 1.2rem;
-      }
-    }
-  }
   </style>
 
   <body>
