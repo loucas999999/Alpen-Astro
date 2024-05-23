@@ -20,7 +20,7 @@
     <hr class="footer__hr-undertext" />
     <div class="footer__ul-list">
       <div class="footer__first-ul">
-        <ul>
+        <ul class="footer__toggle">
           <div class="footer__arrow">
             <h3>Terms & Conditions</h3>
             <svg
@@ -34,28 +34,26 @@
               ></path>
             </svg>
           </div>
-          <a href="/terms/">
-            <li class="list-show">Agreement</li>
-          </a>
-          <a href="/terms/#content__section">
-            <li class="list-show">Content</li>
-          </a>
-          <a href="/terms/#third__party__section">
-            <li class="list-show">Third-Party Services</li>
-          </a>
-          <a href="/terms/#pricing__section">
-            <li class="list-show">Pricing</li>
-          </a>
-          <a href="/terms/#violation__section">
-            <li class="list-show">Violation</li>
-          </a>
-          <a href="/terms/#feedback__section">
-            <li class="list-show">Feedback & Info</li>
-          </a>
+          <li class="list-show"><a href="/terms/">Agreement</a></li>
+          <li class="list-show">
+            <a href="/terms/#content__section">Content</a>
+          </li>
+          <li class="list-show">
+            <a href="/terms/#third__party__section">Third-Party Services</a>
+          </li>
+          <li class="list-show">
+            <a href="/terms/#pricing__section">Pricing</a>
+          </li>
+          <li class="list-show">
+            <a href="/terms/#violation__section">Violation</a>
+          </li>
+          <li class="list-show">
+            <a href="/terms/#feedback__section">Feedback & Info</a>
+          </li>
         </ul>
       </div>
       <div class="footer__second-ul">
-        <ul>
+        <ul class="footer__toggle">
           <div class="footer__arrow">
             <h3>Alpen's Policies</h3>
             <svg
@@ -69,31 +67,29 @@
               ></path>
             </svg>
           </div>
-          <a href="/privacy/">
-            <li class="list-show">Introduction</li>
-          </a>
-          <a href="/privacy/#data__section">
-            <li class="list-show">Data collection</li>
-          </a>
-          <a href="/privacy/#data-use__section">
-            <li class="list-show">Data use</li>
-          </a>
-          <a href="/privacy/#data-sharing__section">
-            <li class="list-show">Data Sharing</li>
-          </a>
-          <a href="/privacy/#user-rights__section">
-            <li class="list-show">User Rights</li>
-          </a>
-          <a href="/privacy/#updates__section">
-            <li class="list-show">Policy Updates</li>
-          </a>
-          <a href="/privacy/#contact__section">
-            <li class="list-show">Contact Information</li>
-          </a>
+          <li class="list-show"><a href="/privacy/">Introduction</a></li>
+          <li class="list-show">
+            <a href="/privacy/#data__section">Data collection</a>
+          </li>
+          <li class="list-show">
+            <a href="/privacy/#data-use__section">Data use</a>
+          </li>
+          <li class="list-show">
+            <a href="/privacy/#data-sharing__section">Data Sharing</a>
+          </li>
+          <li class="list-show">
+            <a href="/privacy/#user-rights__section">User Rights</a>
+          </li>
+          <li class="list-show">
+            <a href="/privacy/#updates__section">Policy Updates</a>
+          </li>
+          <li class="list-show">
+            <a href="/privacy/#contact__section">Contact Information</a>
+          </li>
         </ul>
       </div>
       <div class="footer__third-ul">
-        <ul>
+        <ul class="footer__toggle">
           <div class="footer__arrow">
             <h3>Guide & Info</h3>
             <svg
@@ -107,33 +103,32 @@
               ></path>
             </svg>
           </div>
-          <a href="/guide/">
-            <li class="list-show">Why we started</li>
-          </a>
-          <a href="/guide/#services__section">
-            <li class="list-show">Our Services</li>
-          </a>
-          <a href="/guide/#go__to-duration">
-            <li class="list-show">Project Details</li>
-          </a>
-          <a href="/guide/#instructions__section">
-            <li class="list-show">Payment Instructions</li>
-          </a>
-          <a href="/guide/#contract__section">
-            <li class="list-show">Contract</li>
-          </a>
-          <a href="/guide/#guide__section">
-            <li class="list-show">Working Guide</li>
-          </a>
-          <a href="/guide/#refunds__section">
-            <li class="list-show">Refunds</li>
-          </a>
-          <a href="/guide/#assistance__section">
-            <li class="list-show">Further Assistance</li>
-          </a>
+          <li class="list-show"><a href="/guide/">Why we started</a></li>
+          <li class="list-show">
+            <a href="/guide/#services__section">Our Services</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#go__to-duration">Project Details</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#instructions__section">Payment Instructions</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#contract__section">Contract</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#guide__section">Working Guide</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#refunds__section">Refunds</a>
+          </li>
+          <li class="list-show">
+            <a href="/guide/#assistance__section">Further Assistance</a>
+          </li>
         </ul>
       </div>
     </div>
+
     <div class="text__under-ul">
       <p>
         Any issues with the website contact
@@ -160,24 +155,21 @@
 </footer>
 
 <script>
-  document.querySelectorAll(".footer__arrow h3").forEach(function (h3) {
-    h3.addEventListener("click", function () {
-        const ul = this.parentNode.parentNode; 
-        const svg = this.nextElementSibling; // Assuming SVG is right before the h3 element
+  document.querySelectorAll(".footer__toggle").forEach(function (ul) {
+    ul.addEventListener("click", function () {
+      const svg = ul.querySelector(".footer__arrow svg"); // Get the SVG within the same UL
 
-        // Toggle active class on list items
-        ul.querySelectorAll(".list-show").forEach(function (li) {
-            li.classList.toggle("active");
-        });
+      // Toggle active class on list items
+      ul.querySelectorAll(".list-show").forEach(function (li) {
+        li.classList.toggle("active");
+      });
 
-        // Check if any list item is active to determine rotation state
-        if (ul.querySelector(".list-show.active")) {
-            svg.style.transform = 'rotate(180deg)';
-        } else {
-            svg.style.transform = 'rotate(0deg)';
-        }
+      // Check if any list item is active to determine rotation state
+      if (ul.querySelector(".list-show.active")) {
+        svg.style.transform = "rotate(180deg)";
+      } else {
+        svg.style.transform = "rotate(0deg)";
+      }
     });
-});
-
-
+  });
 </script>
