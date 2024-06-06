@@ -7,6 +7,14 @@ import MainHead from "../layouts/MainHead.astro";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Logo1 from '../assets/Logo-golden-text.png';
+import Logo2 from '../assets/logo-short.png';
+import Logo3 from '../assets/Roof+logo+white+and+blue+trial.png';
+import Logo4 from '../assets/taverna-asshiotis-logo-10.png';
+import Logo5 from '../assets/kb-motorbike-logo-md21-3.svg';
+import Logo6 from '../assets/download.png';
+import Logo7 from '../assets/Henrys_logo.png'
+import Logo8 from '../assets/logo-black.svg';
 ---
 
 <html lang="en">
@@ -277,6 +285,17 @@ import Header from "../components/Header.astro";
       right: 0;
       margin-inline: auto;
       filter: blur(45px);
+    }
+
+    /* SLIDER */
+    .slider-section {
+      padding: 4rem 0;
+    }
+
+    .slider__heading {
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Roboto", sans-serif;
     }
 
     /* JAVASCRIPT FADE IN ANIMATION  */
@@ -934,6 +953,38 @@ import Header from "../components/Header.astro";
         <div class="further__info-right">
           <Image class="testing-image" src={Images} alt="" />
           <div class="avatar__shadow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-section">
+      <div class="slider__heading">
+        <h1>Trusted Us</h1>
+      </div>
+      <div class="wrapper">
+        <div class="item item1">
+          <Image src={ Logo1 } alt="logo-image"/>
+        </div>
+        <div class="item item2">
+          <Image src={ Logo2 } alt="logo-image"/>
+        </div>
+        <div class="item item3">
+          <Image src={ Logo3 } alt="logo-image"/>
+        </div>
+        <div class="item item4">
+          <Image src={ Logo4 } alt="logo-image"/>
+        </div>
+        <div class="item item5">
+          <Image src={ Logo5 } alt="logo-image"/>
+        </div>
+        <div class="item item6">
+          <Image src={ Logo6 } alt="logo-image"/>
+        </div>
+        <div class="item item7">
+          <Image src={ Logo7 } alt="logo-image"/>
+        </div>
+        <div class="item item8">
+          <Image src={ Logo8 } alt="logo-image"/>
         </div>
       </div>
     </section>
